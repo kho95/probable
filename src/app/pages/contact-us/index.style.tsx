@@ -1,0 +1,50 @@
+import styled from 'styled-components';
+
+import Media from '../../../assets/styles/media';
+import THEME from '../../../assets/styles/config';
+
+export const ContactInfoCtn = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-bottom: 32px;
+
+  ${Media.Below.tablet`
+    padding: 0 7vw 32px;
+  `}
+
+  ${Media.Below.mobileLarge`
+    flex-direction: column;
+    padding: 0 3vw 32px;
+  `}
+`;
+
+export const FormCtn = styled.div`
+  display: flex;
+  width: 100%;
+  min-width: 300px;
+  padding-right: 7vw;
+  padding-bottom: 80px;
+
+  ${Media.Below.tablet`
+    width: 100%;
+    padding: 0 7vw 80px;
+  `}
+`;
+
+export const Title = styled.h2`
+  font-size: 36px;
+  margin-bottom: ${THEME.spacing.spacing['05']};
+
+  ${Media.Below.mobileLarge`
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: ${THEME.spacing.spacing['04']};
+  `}
+`;
+
+export const SectionCtn = styled.div`
+  ${Media.Below.tablet`
+    margin-bottom: 32px;
+  `}
+`;
