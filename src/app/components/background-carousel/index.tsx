@@ -16,7 +16,7 @@ class BackgroundCarousel extends React.Component {
       arrows: false,
       pauseOnHover: false,
       infinite: true,
-      speed: 2000,
+      speed: 5000,
       slidesToShow: 1,
       slidesToScroll: 1,
       className: 'slider-ctn',
@@ -24,16 +24,13 @@ class BackgroundCarousel extends React.Component {
     return (
       <Slider {...settings}>
         <div>
+          <BackgoundImage backgroundImg={'https://i.imgur.com/bOoPywT.jpg'} alt="Otakiri 932"></BackgoundImage>
+        </div>
+        <div>
           <BackgoundImage backgroundImg={'https://i.imgur.com/ibK3qVn.jpg'} alt="Otakiri 932"></BackgoundImage>
         </div>
         <div>
           <BackgoundImage backgroundImg={'https://i.imgur.com/wD2UJC9.jpg'} alt="Otakiri 932"></BackgoundImage>
-        </div>
-        <div>
-          <BackgoundImage backgroundImg={'https://i.imgur.com/uRvvLbU.jpg'} alt="Otakiri 932"></BackgoundImage>
-        </div>
-        <div>
-          <BackgoundImage backgroundImg={'https://i.imgur.com/bOoPywT.jpg'} alt="Otakiri 932"></BackgoundImage>
         </div>
         <div>
           <BackgoundImage backgroundImg={'https://i.imgur.com/6L6a2Bm.jpg'} alt="Otakiri 932"></BackgoundImage>
