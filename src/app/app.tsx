@@ -7,18 +7,14 @@ import Navigation from './components/Navigation';
 
 import Home from './pages/home';
 import Otakiri from './pages/otakiri';
-import ContactUs from './pages/contact-us';
 
 const App = () => {
   return (
     <AppStateProvider>
       <Navigation>
         <Router>
-
           <Home path="/" />
           <Otakiri path="otakiri" />
-          <ContactUs path="contact-us" />
-
         </Router>
       </Navigation>
     </AppStateProvider>

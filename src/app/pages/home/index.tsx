@@ -13,12 +13,16 @@ import Image from '../../../components/image';
 import Paragraph from '../../../components/paragraph';
 import ContactForm from '../../components/contactForm';
 
-import HeroVideo from '../../components/hero-video';
+import Hero from '../../components/hero';
 import TextWithImage from '../../components/text-with-image';
 import PageLayout from '../../components/pageLayout';
 import Section from '../../components/section';
+import Map from '../../components/google-map';
+
+import { ArrowDownwardOutline } from '@styled-icons/evaicons-outline/ArrowDownwardOutline';
 
 import {
+  DownArrow,
   Title,
   Header,
   ContactInfoCtn,
@@ -34,13 +38,16 @@ const Home: React.FC<any> = (): React.ReactElement => {
 
   }, []);
 
-
   return (
     <PageLayout>
-      <HeroVideo
-        backgroundImg="https://i.imgur.com/8pj4WJj.jpg" overlayColor='#24224570'>
+      <Hero
+        backgroundImg="https://i.imgur.com/7MUHhn2.jpg" overlayColor='#00000090'>
+        <Image src='https://i.imgur.com/3OaGeti.png' alt="Otakiri 932" height="300px"></Image>
         <Header>PROBABLE KOREA</Header>
-      </HeroVideo>
+        <DownArrow>
+          <ArrowDownwardOutline></ArrowDownwardOutline>
+        </DownArrow>
+      </Hero>
 
       <Section backgroundColor="#ffffff">
         <TextWithImage img="https://i.imgur.com/YsIBqOD.png">
@@ -90,7 +97,7 @@ const Home: React.FC<any> = (): React.ReactElement => {
           </div>
         </TextWithImage>
       </Section>
-      <Section backgroundColor="#ffffff">
+      <Section id="contact-us" backgroundColor="#ffffff">
         <Title>CONTACT US</Title>
         <ContentLayout>
           <ContentLayout desktopWidth="30%">
@@ -117,7 +124,7 @@ const Home: React.FC<any> = (): React.ReactElement => {
               </ContactInfoCtn>
             </ContentLayout>
             <ContentLayout justify="center">
-              <Image src='https://i.imgur.com/HmHqEei.png' alt="Location of Probable" height="300px"></Image>
+              <Map />
             </ContentLayout>
           </ContentLayout>
         </ContentLayout>

@@ -15,6 +15,7 @@ export const TabCtn = styled.button`
       color: #FFFFFF;
     }
   }
+  
 
   :focus {
     outline: 0px;
@@ -24,6 +25,12 @@ export const TabCtn = styled.button`
     justify-content: center;
     width: 100%;
     padding: 2vh 0;
+
+    :hover, :active  {
+      >span{
+        color: #B4ACA6;
+      }
+    }
   `}
 
   ${Media.Below.mobileLarge`
@@ -39,9 +46,11 @@ export const TabText = styled.span`
   font-weight: bold;
   font-size: 14px;
   color: #B4ACA6;
+  transition: color 0.3s ease-in-out;
 
-  ${Media.Below.mobileLarge`
-    font-size: 12px;
-    line-height: 12px;
+  ${Media.Below.tablet`
+    font-size: 16px;
+    line-height: 16px;
+    color: #14150F;
   `};
 `;

@@ -63,7 +63,7 @@ const Nav: React.FC<any> = (): React.ReactElement => {
                 text="Contact Us"
                 handleClick={(e): void => {
                   e.preventDefault();
-                  navigate(`/contact-us`);
+                  navigate(`/#contact-us`);
                 }}
               />
               <NavTab

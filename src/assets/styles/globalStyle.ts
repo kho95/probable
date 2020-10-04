@@ -30,7 +30,6 @@ const GlobalStyle = createGlobalStyle`
     color: ${THEME.colors.primaryFontColor};
     line-height: ${THEME.typography.baseLineHeight};
     font-family: ${THEME.typography.baseFontFamily};
-    background-color: ${THEME.colors.primaryBackgroundColor};
   }
 
   > svg {

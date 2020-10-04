@@ -1,7 +1,29 @@
 import styled from 'styled-components';
+import { keyframes } from 'styled-components';
 
 import Media from '../../../assets/styles/media';
 import THEME from '../../../assets/styles/config';
+
+const rotate = keyframes`
+  0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+`;
+
+export const DownArrow = styled.div`
+  position: absolute;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  color: white;
+  animation: ${rotate} 2s infinite;
+`;
 
 export const Title = styled.h2`
   font-size: 24px;

@@ -11,7 +11,7 @@ export const ContentCtn = styled.div`
   width: ${THEME.layout.contentWidth};
   padding: 0 ${THEME.layout.gutter.desktop};
 
-  ${Media.Below.mobileLarge`
+  ${Media.Below.tablet`
     padding: 0 ${THEME.layout.gutter.mobile};
   `}
 `;
@@ -59,7 +59,7 @@ export const LogAJobBtn = styled.button`
     height: 118px;
   `}
 
-  ${Media.Below.mobileLarge`
+  ${Media.Below.tablet`
     display: none;
   `}
 `;
@@ -72,7 +72,7 @@ export const LogAJobBtnMobileCtn = styled.div`
   bottom: 10px;
   z-index: 200;
 
-  ${Media.Below.mobileLarge`
+  ${Media.Below.tablet`
     display: initial;
   `}
 
@@ -164,12 +164,11 @@ export const MobileNavCtn = styled.div<NavigationProps>`
     overflow: hidden;
     top: 72px;
     right: 0;
-    width: 280px;
+    width: 100%;
     align-items: center;
-    background-color: #14150F;
+    background-color: #ffffff;
     flex-direction: column;
     box-shadow: 0 9px 10px 0 rgba(0,130,189,0.2);
-    width: unset;
   `}
 
   ${(props): SimpleInterpolation =>
@@ -193,20 +192,23 @@ export const NavCtn = styled.nav`
   background-color: #14150F;
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   height: 72px;
   box-shadow: ${THEME.etc.primaryBorderShadow};
   z-index: 80;
 
-  ${Media.Below.mobileLarge`
-    width: 100%;
-    height: 110px;
-    padding: 10px 10px 0;
+  ${Media.Below.tablet`
+    height: 64px;
+    padding: 10px;
   `}
 `;
 
 export const NavSpacer = styled.div`
   height: 72px;
+  
+  ${Media.Below.tablet`
+    height: 64px;
+  `}
 `;
 
 export const TabsCtn = styled.div`
