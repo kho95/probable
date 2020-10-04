@@ -345,7 +345,7 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
               handleClick={(e): void => {
                 e.preventDefault();
                 console.log('CLICKED');
-                navigate('/contact-us');
+                navigate('/#contact-us');
               }}
             >
               Enquire
