@@ -10,11 +10,17 @@ interface SectionProps {
   column?: boolean;
   align?: string;
   justify?: string;
+  wrap?: boolean;
 }
 
 export const StyleLayout = styled.div<SectionProps>`
   display: flex;
-  flex-wrap: wrap;
+
+  ${(props): SimpleInterpolation =>
+    css && props.wrap &&
+    `
+    flex-wrap: wrap;
+  `}
 
   ${(props): SimpleInterpolation =>
     css && props.align &&

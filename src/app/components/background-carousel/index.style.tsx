@@ -7,17 +7,16 @@ interface SlideProps {
 }
 
 export const BackgoundImage = styled.div<SlideProps>`
-  display: block;
-  margin: 0 auto;
   height: calc(100vh - 72px);
   width: 100%;
   background-position: center center !important;
   background-size: cover !important;
+  background-repeat: no-repeat;
 
     ${(props): SimpleInterpolation =>
     css &&
     `
-      background: url(${props.backgroundImg}) no-repeat;
+      background-image: url('${props.backgroundImg}');
     `}
 
   ${Media.Below.tablet`

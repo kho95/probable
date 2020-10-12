@@ -30,7 +30,7 @@ export default {
     mobile: '24px',
   },
   section: {
-    desktop: '56px',
+    desktop: '72px',
     tablet: '40px',
     mobile: '24px',
   }

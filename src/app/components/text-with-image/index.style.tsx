@@ -4,7 +4,6 @@ import Media from '../../../assets/styles/media';
 import THEME from '../../../assets/styles/config';
 
 export const Image = styled.img`
-  height: 100%;
 `;
 
 export const ImageCtn = styled.div<TextWithImageProps>`

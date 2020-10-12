@@ -46,17 +46,10 @@ const Nav: React.FC<any> = (): React.ReactElement => {
           <MobileNavCtn open={showNavDropdown}>
             <TabsCtn>
               <NavTab
-                text="Products"
+                text="Otakiri"
                 handleClick={(e): void => {
                   e.preventDefault();
-                  navigate(`/#products`);
-                }}
-              />
-              <NavTab
-                text="Partners"
-                handleClick={(e): void => {
-                  e.preventDefault();
-                  navigate(`/partners`);
+                  navigate(`/otakiri`);
                 }}
               />
               <NavTab

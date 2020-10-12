@@ -13,3 +13,23 @@ export const Title = styled.h2`
     margin-bottom: ${THEME.spacing.spacing['04']};
   `}
 `;
+
+export const LogoImage = styled.img`
+  height: 100px;
+  width: 100px;
+  margin-left: 40px;
+`;
+
+export const HeroImage = styled.img`
+  height: 10vw;
+  min-height: 100px;
+`;
+
+export const LogoParagraph = styled.div`
+  display: flex;
+  padding-bottom: 32px;
+`;
+
+export const HeroText = styled.h1`
+  text-align: center;
+`;

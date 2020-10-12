@@ -6,9 +6,9 @@ export default {
   extraLightGrey: '#f0f0f0',
   white: '#ffffff',
 
-  primaryColor: '#3ea0cd',
-  secondaryColor: '#999',
-  tertiaryColor: '#bd1414',
+  primaryColor: '#B4ACA6',
+  secondaryColor: '#14150F',
+  tertiaryColor: '#525266',
   primaryBackgroundColor: '#f9fbfc',
   secondaryBackgroundColor: '#fff',
   tertiaryBackgroundColor: '#fff',

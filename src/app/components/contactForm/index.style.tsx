@@ -50,19 +50,20 @@ export const ShowButton = styled.button`
 `;
 
 export const SubmitButton = styled.input`
-  text-shadow: none;
-  height: 3rem;
-  text-align: center;
-  padding: 0 3rem;
-  font-size: 1rem;
-  color: ${THEME.colors.white};
-  background-color: #5596FC;
+  height: ${THEME.button.height};
+  padding: 0 ${THEME.button.padding};
+  font-size: ${THEME.button.fontSize};
+  font-weight: ${THEME.button.fontWeight};
+  border: solid 1px ${THEME.colors.secondaryColor};
+  background-color: ${THEME.colors.white};
+  transition: background-color 300ms ease-in-out;
 
   ${Media.Below.mobile(css`
     width: 100%;
   `)}
-
+  
   &:hover {
-    background-color: #4B82D8;
+    cursor: pointer;
+    background-color: ${THEME.colors.primaryColor};
   }
 `;

@@ -50,6 +50,7 @@
     "react-router-hash-link": "^2.0.0",
     "react-slick": "^0.27.11",
     "react-table": "^7.0.0-rc.15",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^4.3.2",
     "styled-icons": "^10.11.0"
   },

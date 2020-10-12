@@ -26,8 +26,9 @@ export const StyledButton = styled(ButtonReset) <ButtonStyleProps>`
       padding: 0 ${props.theme.button.padding};
       font-size: ${props.theme.button.fontSize};
       font-weight: ${props.theme.button.fontWeight};
-      color: ${props.theme.colors.primaryColor};
       background-color: ${props.theme.colors.primaryBackgroundColor};
+      transition: background-color 300ms ease-in-out;
+      border: solid 1px ${props.theme.colors.secondaryColor};
 
       ${Media.Below.mobile(css`
         width: 100%;
@@ -45,15 +46,16 @@ export const StyledButton = styled(ButtonReset) <ButtonStyleProps>`
       padding: 0 ${props.theme.button.padding};
       font-size: ${props.theme.button.fontSize};
       font-weight: ${props.theme.button.fontWeight};
-      color: white;
-      background-color: #5596FC;
+      border: solid 1px ${props.theme.colors.secondaryColor};
+      background-color: ${props.theme.colors.white};
+      transition: background-color 300ms ease-in-out;
 
       ${Media.Below.mobile(css`
         width: 100%;
       `)}
 
       &:hover {
-        background-color: #4B82D8;
+        background-color: ${props.theme.colors.primaryColor};
       }
     `}
 `;
