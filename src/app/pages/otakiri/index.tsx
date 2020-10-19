@@ -285,7 +285,6 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
               isSecondary
               handleClick={(e): void => {
                 e.preventDefault();
-                console.log('CLICKED');
                 navigate('/#contact-us');
               }}
             >
@@ -296,7 +295,15 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
         <div></div>
       </Section>
       <SectionBackground backgroundSrc='https://i.imgur.com/wvoe8TR.png'>
-        'Hello'
+        <Button
+          isSecondary
+          handleClick={(e): void => {
+            e.preventDefault();
+            window.open("https://drive.google.com/uc?export=download&id=1HpgXOIaLENhIGNM_d-DpOh4puKx_Pqoh", "_blank")
+          }}
+        >
+          Download Brochure
+          </Button>
       </SectionBackground>
     </PageLayout >
   );

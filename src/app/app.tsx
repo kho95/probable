@@ -8,6 +8,9 @@ import Navigation from './components/Navigation';
 import Home from './pages/home';
 import Otakiri from './pages/otakiri';
 
+import "~slick-carousel/slick/slick.css";
+import "~slick-carousel/slick/slick-theme.css";
+
 const App = () => {
   return (
     <AppStateProvider>
