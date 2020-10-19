@@ -162,13 +162,13 @@ export const MobileNavCtn = styled.div<NavigationProps>`
     position: absolute;
     transition: max-height 0.3s ease-in-out;
     overflow: hidden;
-    top: 72px;
+    top: 55px;
     right: 0;
     width: 100%;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #14150F;
     flex-direction: column;
-    box-shadow: 0 9px 10px 0 rgba(0,130,189,0.2);
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.6);
   `}
 
   ${(props): SimpleInterpolation =>

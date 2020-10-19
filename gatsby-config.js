@@ -42,7 +42,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: 'src/assets/images/aquaHeatLogoSmall/logo@3x.png'
+        icon: 'src/assets/images/probable/icon-144x144.png'
       }
     }
   ],

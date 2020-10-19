@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 import Media from '../../assets/styles/media';
-import THEME from '../../assets/styles/config';
 
 export const TabCtn = styled.button`
   display: flex;
@@ -16,7 +15,6 @@ export const TabCtn = styled.button`
     }
   }
   
-
   :focus {
     outline: 0px;
   }
@@ -25,12 +23,6 @@ export const TabCtn = styled.button`
     justify-content: center;
     width: 100%;
     padding: 2vh 0;
-
-    :hover, :active  {
-      >span{
-        color: #B4ACA6;
-      }
-    }
   `}
 
   ${Media.Below.mobileLarge`
@@ -51,6 +43,5 @@ export const TabText = styled.span`
   ${Media.Below.tablet`
     font-size: 16px;
     line-height: 16px;
-    color: #14150F;
   `};
 `;
