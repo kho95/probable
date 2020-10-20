@@ -5,13 +5,14 @@ import {
 } from "./index.style";
 
 interface ParagraphProps {
-  children: any;
+  children: any,
   align?: string,
+  column?: boolean,
 }
 
-const Paragraph: React.FC<ParagraphProps> = ({ children, align }): React.ReactElement => {
+const Paragraph: React.FC<ParagraphProps> = ({ children, column, align }): React.ReactElement => {
   return (
-    <StyledParagraph align={align}>
+    <StyledParagraph align={align} column={column}>
       {children}
     </StyledParagraph>
   );

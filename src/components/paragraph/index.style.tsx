@@ -5,6 +5,7 @@ import THEME from '../../assets/styles/config';
 
 interface ParagraphProps {
   align?: string;
+  column?: boolean;
 }
 
 export const StyledParagraph = styled.span<ParagraphProps>`
@@ -15,6 +16,17 @@ export const StyledParagraph = styled.span<ParagraphProps>`
     css && props.align &&
     `
     text-align: ${props.align};
+  `}
+
+  ${(props): SimpleInterpolation =>
+    css && props.column &&
+    `
+    flex-direction: column;
+  `}
+
+  ${Media.Below.tablet`
+    text-align: center;
+    justify-content: center;
   `}
 
   ${Media.Below.mobile`

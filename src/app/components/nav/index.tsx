@@ -50,6 +50,7 @@ const Nav: React.FC<any> = (): React.ReactElement => {
                 handleClick={(e): void => {
                   e.preventDefault();
                   navigate(`/otakiri`);
+                  setNavDropdown(false);
                 }}
               />
               <NavTab
@@ -57,12 +58,14 @@ const Nav: React.FC<any> = (): React.ReactElement => {
                 handleClick={(e): void => {
                   e.preventDefault();
                   navigate(`/#contact-us`);
+                  setNavDropdown(false);
                 }}
               />
               <NavTab
                 text="Shop"
                 handleClick={(e): void => {
                   e.preventDefault();
+                  setNavDropdown(false);
                   window.open('https://www.google.com', '_blank');
                 }}
               />

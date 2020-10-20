@@ -29,6 +29,11 @@ export const Title = styled.h2`
   font-size: 24px;
   margin-bottom: ${THEME.spacing.spacing['05']};
 
+  ${Media.Below.tablet`
+    text-align: center;
+    justify-content: center;
+  `}
+
   ${Media.Below.mobileLarge`
     text-align: center;
     font-size: 18px;

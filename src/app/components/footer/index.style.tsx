@@ -15,6 +15,10 @@ export const ContentCtn = styled.div`
   `}
 `;
 
+export const FooterLink = styled.a`
+  color: #B4ACA6;
+`;
+
 export const FooterCtn = styled.footer`
   background-color: #14150F;
   ${CmpSpacing}

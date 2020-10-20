@@ -16,11 +16,14 @@ import Section from '../../components/section';
 import SectionBackground from '../../components/section-background';
 
 import {
-  Title,
+  HeroImageLayout,
   LogoImage,
   LogoParagraph,
   HeroImage,
   HeroText,
+  MineralsParagraph,
+  Title,
+  WhiteTitle,
 } from './index.style';
 
 const Otakiri: React.FC<any> = (): React.ReactElement => {
@@ -29,18 +32,18 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
     <PageLayout>
       <HeroVideo
         backgroundImg="https://i.imgur.com/8pj4WJj.jpg" overlayColor='#FFFFFF70'>
-        <ContentLayout column={true}>
+        <ContentLayout align='center' column>
           <ContentLayout align='center'>
             <HeroText>A PREMIUM WATER DESIGNED WITH HOSPITALITY IN MIND</HeroText>
           </ContentLayout>
-          <ContentLayout desktopWidth="100%" justify='space-around'>
-            <ContentLayout desktopWidth="50%" mobileLargeWidth="100%" align='center' column={true}>
+          <HeroImageLayout>
+            <ContentLayout desktopWidth="50%" mobileLargeWidth="100%" align='center' column>
               <HeroImage src='https://i.imgur.com/uvKX20C.jpg' alt="Top of Otakiri 932 glass bottle" height="300px"></HeroImage>
             </ContentLayout>
-            <ContentLayout desktopWidth="50%" mobileLargeWidth="100%" align='center' column={true}>
+            <ContentLayout desktopWidth="50%" mobileLargeWidth="100%" align='center' column>
               <HeroImage src='https://i.imgur.com/9a7duqW.png' alt="Otakiri 932" height="300px"></HeroImage>
             </ContentLayout>
-          </ContentLayout>
+          </HeroImageLayout>
         </ContentLayout>
       </HeroVideo>
 
@@ -62,8 +65,8 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
       </Section>
 
       <Section id="products" backgroundColor="black">
-        <Title>THE WATER</Title>
-        <TextWithImage img="https://i.imgur.com/WPGyypW.jpg" imgRight={true}>
+        <TextWithImage img="https://i.imgur.com/WPGyypW.jpg" imgRight={true} textColor="#B4ACA6">
+          <WhiteTitle>THE WATER</WhiteTitle>
           <Paragraph>
             VIP를 위해 탄생한 프리미엄 샘물
           </Paragraph>
@@ -168,13 +171,13 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
           <div>
           </div>
         </TextWithImage>
-        <Paragraph>
-          이산화규소 73mg/L.    중 탄 산 염 40mg/L     황산염 3.1mg/L     나트륨 12mg/L     칼륨 3.5 mg/L       칼슘 3.1mg/L      마그네슘 1.8 mg/L
-        </Paragraph>
+        <MineralsParagraph>
+          이산화규소 73mg/L.    중탄산염 40mg/L     황산염 3.1mg/L     나트륨 12mg/L     칼륨 3.5 mg/L       칼슘 3.1mg/L      마그네슘 1.8 mg/L
+        </MineralsParagraph>
       </Section>
 
       <Section>
-        <ContentLayout>
+        <ContentLayout wrap>
           <ContentLayout desktopWidth="25%" tabletWidth="50%" mobileLargeWidth="100%" align='center' column={true}>
             <Image src='https://i.imgur.com/ozgWSzw.png' alt="Otakiri 932 still glass bottle" height="300px"></Image>
             <Paragraph align='center'>
@@ -220,7 +223,7 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
         </ContentLayout>
       </Section>
 
-      <Section backgroundColor="#E9F1FF">
+      <Section>
         <Title>ACCREDITIONS</Title>
         <LogoParagraph >
           <ContentLayout>
@@ -268,18 +271,18 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
         </LogoParagraph>
       </Section>
       <Section>
-        <ContentLayout>
+        <ContentLayout wrap>
           <ContentLayout desktopWidth="33%" tabletWidth="50%" mobileLargeWidth="100%" align='center' column={true}>
-            <Image src='https://i.imgur.com/2oV0z4F.png' alt="Otakiri springs logo" height="300px"></Image>
+            <Image src='https://i.imgur.com/2oV0z4F.png' alt="Otakiri springs logo" height="200px"></Image>
           </ContentLayout>
           <ContentLayout desktopWidth="33%" tabletWidth="50%" mobileLargeWidth="100%" align='center' justify='center' column={true}>
-            <Paragraph align='center'>
+            <Paragraph align='center' column>
               57 Johnson Road,<br />
               Wakatane. Bay of Plenty,<br />
               New Zealand<br /><br />
               +64 0800 OTAKIRI<br />
               (0800 682 547)<br /><br />
-              www.otakirisprings.co.nz
+              <a href="http://www.otakirisprings.co.nz" target="_blank">www.otakirisprings.co.nz</a>
             </Paragraph>
             <Button
               isSecondary
@@ -294,7 +297,7 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
         </ContentLayout>
         <div></div>
       </Section>
-      <SectionBackground backgroundSrc='https://i.imgur.com/wvoe8TR.png'>
+      <SectionBackground backgroundSrc='https://i.imgur.com/KVN4R7y.jpg'>
         <Button
           isSecondary
           handleClick={(e): void => {

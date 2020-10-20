@@ -10,7 +10,8 @@ import {
   SectionCtn,
   SocialIcon,
   SocialIconCtn,
-  FooterText
+  FooterText,
+  FooterLink,
 } from './index.style';
 
 import { FacebookSquare } from '@styled-icons/boxicons-logos/FacebookSquare'
@@ -35,7 +36,7 @@ const Footer: React.FC<any> = (): React.ReactElement => {
       <ContentCtn>
         <SectionCtn>
           <FooterText>
-            probable@probable.co.kr<br />
+            <FooterLink href="mailto:probable@probable.co.kr">probable@probable.co.kr</FooterLink><br />
             Ph: (+82) 010-7917-0906<br />
             Fax: 032-204-2787<br /><br />
             사업자 번호: 782-22-01090<br />

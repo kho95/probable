@@ -7,15 +7,16 @@ interface TextWithImageProps {
   children: React.ReactChild[];
   img: string;
   imgRight?: boolean;
+  textColor?: string;
 }
 
-const TextWithImage: React.FC<TextWithImageProps> = ({ children, img, imgRight }): React.ReactElement => {
+const TextWithImage: React.FC<TextWithImageProps> = ({ children, img, imgRight, textColor }): React.ReactElement => {
   return (
     <TextWithImageCtn imgRight={imgRight}>
       <ImageCtn imgRight={imgRight}>
         <Image src={img}></Image>
       </ImageCtn>
-      <TextCtn imgRight={imgRight}>{children}</TextCtn>
+      <TextCtn imgRight={imgRight} textColor={textColor}>{children}</TextCtn>
     </TextWithImageCtn>
   );
 };

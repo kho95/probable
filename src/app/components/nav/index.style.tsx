@@ -156,7 +156,7 @@ interface NavigationProps {
 
 export const MobileNavCtn = styled.div<NavigationProps>`
   position: relative;
-  width: 50%;
+  width: 40%;
 
   ${Media.Below.tablet`
     position: absolute;

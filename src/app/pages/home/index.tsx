@@ -93,6 +93,7 @@ const Home: React.FC<any> = (): React.ReactElement => {
           </div>
         </TextWithImage>
       </Section>
+
       <Section id="contact-us">
         <Title>CONTACT US</Title>
         <ContentLayout>

@@ -4,6 +4,15 @@ import Media from '../../../assets/styles/media';
 import THEME from '../../../assets/styles/config';
 
 export const Image = styled.img`
+  width: 100%;
+
+  ${Media.Below.tablet`
+    width: 60%;
+  `}
+
+  ${Media.Below.mobileLarge`
+    width: 100%;
+  `}
 `;
 
 export const ImageCtn = styled.div<TextWithImageProps>`
@@ -35,6 +44,7 @@ export const ImageCtn = styled.div<TextWithImageProps>`
 
 interface TextWithImageProps {
   imgRight?: boolean;
+  textColor?: string;
 }
 
 export const TextCtn = styled.div<TextWithImageProps>`
@@ -55,6 +65,12 @@ export const TextCtn = styled.div<TextWithImageProps>`
     `
       margin-left: 0px;
       margin-right: 40px;
+    `}
+
+  ${(props): SimpleInterpolation =>
+    css && props.textColor &&
+    `
+      color: ${props.textColor}
     `}
 `;
 

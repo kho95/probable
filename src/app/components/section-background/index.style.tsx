@@ -10,7 +10,9 @@ interface SectionProps {
 }
 
 export const ContentCtn = styled.div`
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   ${ContentWidth};
 `;
 
@@ -18,7 +20,7 @@ export const SectionCtn = styled.div<SectionProps>`
   display: flex;
   position: relative;
   width: 100%;
-  height: 38vw;
+  height: 45vw;
   max-height: 600px;
   min-height: 300px;
   padding: ${THEME.layout.section.desktop} ${THEME.layout.gutter.desktop};

@@ -6,6 +6,14 @@ import THEME from './config';
 const GlobalStyle = createGlobalStyle`
   ${normalize()}
 
+  a {
+    color: ${THEME.colors.primaryFontColor};
+
+    :hover {
+      text-decoration: underline;
+    }
+  }
+
   * {
     padding: 0;
     border: none;
