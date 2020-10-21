@@ -31,13 +31,13 @@ const ContactForm: React.FC<any> = (...restProps): React.ReactElement => {
 
   return (
     <Form onSubmit={submit}>
-      <div>Full name</div>
+      <span>Full name</span>
       <InputBox type="text" name="fullName" onChange={handleInputChange} />
-      <div>Email</div>
+      <span>Email</span>
       <InputBox type="email" name="email" onChange={handleInputChange} />
-      <div>Phone number</div>
+      <span>Phone number</span>
       <InputBox type="tel" name="phoneNumber" onChange={handleInputChange} />
-      <div>Message</div>
+      <span>Message</span>
       <InputBox type="text" name="message" onChange={handleInputChange} />
       <SubmitButton type="submit" value="Submit" disabled={submitted} />
     </Form>

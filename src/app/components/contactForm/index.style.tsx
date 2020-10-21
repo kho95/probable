@@ -12,7 +12,7 @@ export const Form = styled.form`
 
 export const InputBox = styled.input`
   margin-bottom: 20px;
-  padding: 5px 0;
+  padding: 5px;
   font-size: 18px;
   width: 100%;
   background-color: ${THEME.colors.extraLightGrey};

@@ -24,6 +24,7 @@ import {
   DownArrow,
   Title,
   Header,
+  HeroContentCtn,
   ContactInfoCtn,
   FormCtn,
   SectionCtn,
@@ -35,15 +36,17 @@ const Home: React.FC<any> = (): React.ReactElement => {
     <PageLayout>
       <Hero
         backgroundImg="https://i.imgur.com/7MUHhn2.jpg" overlayColor='#00000090'>
-        <Image src='https://i.imgur.com/3OaGeti.png' alt="Otakiri 932" height="300px"></Image>
-        <Header>PROBABLE KOREA</Header>
+        <HeroContentCtn>
+          <Image src='https://i.imgur.com/3OaGeti.png' alt="Otakiri 932" height="300px"></Image>
+          <Header>PROBABLE</Header>
+        </HeroContentCtn>
         <DownArrow>
           <ArrowDownwardOutline></ArrowDownwardOutline>
         </DownArrow>
       </Hero>
 
       <Section backgroundColor="#ffffff">
-        <TextWithImage img="https://i.imgur.com/YsIBqOD.png">
+        <TextWithImage img="https://i.imgur.com/7PPG2Ov.jpg">
           <Title>ABOUT US</Title>
           <Paragraph>
             더 큰 가능성의 시작이라 (The beginning of greater possibilites.)”는 프라버블의 슬로건을 통해 해외 및 국내의 가능성 있는 상품을 투자 제작 및 유통하고 있습니다.

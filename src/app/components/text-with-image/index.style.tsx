@@ -3,7 +3,11 @@ import styled, { css, SimpleInterpolation } from 'styled-components';
 import Media from '../../../assets/styles/media';
 import THEME from '../../../assets/styles/config';
 
-export const Image = styled.img`
+interface ImageProps {
+  smallImg?: boolean;
+}
+
+export const Image = styled.img<ImageProps>`
   width: 100%;
 
   ${Media.Below.tablet`
@@ -12,6 +16,12 @@ export const Image = styled.img`
 
   ${Media.Below.mobileLarge`
     width: 100%;
+  `}
+
+  ${(props): SimpleInterpolation =>
+    css && props.smallImg &&
+    `
+      width: 60%;
   `}
 `;
 

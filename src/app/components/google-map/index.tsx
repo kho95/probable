@@ -1,35 +1,45 @@
-import React, { Component } from 'react';
-import GoogleMapReact from 'google-map-react';
+import React from 'react'
+import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+const containerStyle = {
+  width: '400px',
+  height: '400px'
+};
 
-class SimpleMap extends Component {
-  static defaultProps = {
-    center: {
-      lat: 37.5023831,
-      lng: 126.760824
-    },
-    zoom: 16
-  };
+const center = {
+  lat: +37.5023831,
+  lng: +126.760824
+};
 
-  render() {
-    return (
-      // Important! Always set the container height explicitly
-      <div style={{ height: '30vh', width: '100%' }}>
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: 'AIzaSyBY_wwUER12xGShJHgqGtNYtHaJAPefHR0' }}
-          defaultCenter={SimpleMap.defaultProps.center}
-          defaultZoom={SimpleMap.defaultProps.zoom}
-        >
-          <AnyReactComponent
-            lat={37.5023831}
-            lng={126.760824}
-            text="My Marker"
-          />
-        </GoogleMapReact>
-      </div>
-    );
-  }
+function Map() {
+  const [map, setMap] = React.useState(null)
+
+  const onLoad = React.useCallback(function callback(map) {
+    const bounds = new window.google.maps.LatLngBounds();
+    map.fitBounds(bounds);
+    setMap(map)
+  }, [])
+
+  const onUnmount = React.useCallback(function callback(map) {
+    setMap(null)
+  }, [])
+
+  return (
+    <LoadScript
+      googleMapsApiKey="AIzaSyBY_wwUER12xGShJHgqGtNYtHaJAPefHR0"
+    >
+      <GoogleMap
+        mapContainerStyle={containerStyle}
+        center={center}
+        zoom={18}
+        onLoad={onLoad}
+        onUnmount={onUnmount}
+      >
+        <img src='https://i.imgur.com/FOHu0ED.png'></img>
+        <></>
+      </GoogleMap>
+    </LoadScript>
+  )
 }
 
-export default SimpleMap;
+export default React.memo(Map)

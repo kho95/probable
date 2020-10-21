@@ -43,6 +43,7 @@ export const Title = styled.h2`
 export const HeroImage = styled.img`
   height: 15vw;
   min-height: 100px;
+  max-height: 280px;
 `;
 
 export const LogoImage = styled.img`

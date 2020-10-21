@@ -47,10 +47,10 @@ const Footer: React.FC<any> = (): React.ReactElement => {
 
         <EndCtn>
           <SocialIconCtn>
-            <SocialIcon onClick={() => window.open('https://www.instagram.com/probable.korea/', '_blank')}>
+            <SocialIcon onClick={() => window.open('https://www.facebook.com/Probable-111459767290836/', '_blank')}>
               <FacebookSquare></FacebookSquare>
             </SocialIcon>
-            <SocialIcon onClick={() => window.open('https://www.facebook.com/Probable-111459767290836/', '_blank')}>
+            <SocialIcon onClick={() => window.open('https://www.instagram.com/probable.korea/', '_blank')}>
               <Instagram></Instagram>
             </SocialIcon>
           </SocialIconCtn>

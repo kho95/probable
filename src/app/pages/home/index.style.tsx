@@ -58,6 +58,11 @@ export const Header = styled.h1`
   `}
 `;
 
+export const HeroContentCtn = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 export const ContactInfoCtn = styled.div`
   display: flex;
   width: 100%;
