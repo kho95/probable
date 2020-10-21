@@ -55,8 +55,6 @@ export const StyleLayout = styled.div<SectionProps>`
   `}
 
   ${Media.Below.mobileLarge`
-    flex: 1 0 100%;
-
     ${(props: { mobileLarge: any; }): SimpleInterpolation =>
       css && props.mobileLarge &&
       `
@@ -65,8 +63,6 @@ export const StyleLayout = styled.div<SectionProps>`
   `}
 
   ${Media.Below.mobile`
-    flex: 1 0 100%;
-
     ${(props: { mobile: any; }): SimpleInterpolation =>
       css && props.mobile &&
       `

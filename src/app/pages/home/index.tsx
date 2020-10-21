@@ -20,6 +20,7 @@ import Map from '../../components/google-map';
 import { ArrowDownwardOutline } from '@styled-icons/evaicons-outline/ArrowDownwardOutline';
 
 import {
+  ButtonCtn,
   DownArrow,
   Title,
   Header,
@@ -58,7 +59,7 @@ const Home: React.FC<any> = (): React.ReactElement => {
             대표이사 / CEO
           </Paragraph>
           <Paragraph>
-            Able Yoo
+            Abel Yoo
           </Paragraph>
         </TextWithImage>
       </Section>
@@ -79,7 +80,7 @@ const Home: React.FC<any> = (): React.ReactElement => {
             일년 내내 계절이 바뀌어도 물 수압은 변함이 없습니다. 물 고유의 청정함
             (Purity)이 그대로 전달될 수 있도록 수원지에서 바로 제조됩니다.
           </Paragraph>
-          <div>
+          <ButtonCtn>
             <Button
               isSecondary
               handleClick={(e): void => {
@@ -90,19 +91,19 @@ const Home: React.FC<any> = (): React.ReactElement => {
             >
               Learn more
           </Button>
-          </div>
+          </ButtonCtn>
         </TextWithImage>
       </Section>
 
       <Section id="contact-us">
         <Title>CONTACT US</Title>
-        <ContentLayout>
-          <ContentLayout desktopWidth="30%">
+        <ContentLayout wrap>
+          <ContentLayout desktopWidth="40%" tabletWidth="100%">
             <FormCtn>
               <ContactForm />
             </FormCtn>
           </ContentLayout>
-          <ContentLayout desktopWidth="50%" column={true}>
+          <ContentLayout desktopWidth="60%" tabletWidth="100%" column={true}>
             <ContentLayout justify="center">
               <Map />
             </ContentLayout>
@@ -112,7 +113,7 @@ const Home: React.FC<any> = (): React.ReactElement => {
                   probable@probable.co.kr<br />
                   Ph: (+82) 010-7917-0906<br />
                   Fax: 032-204-2787
-              </SectionCtn>
+                </SectionCtn>
                 <SectionCtn>
                   경기도 부천시 소향로 131, <br />
                   일산빌딩 7층 131호 (중동)<br /><br />

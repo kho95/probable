@@ -4,7 +4,15 @@ import { keyframes } from 'styled-components';
 import Media from '../../../assets/styles/media';
 import THEME from '../../../assets/styles/config';
 
-const rotate = keyframes`
+export const ButtonCtn = styled.div`
+  display: flex;
+
+  ${Media.Below.tablet`
+    justify-content: center;
+  `}
+`;
+
+const bounce = keyframes`
   0% {
 		transform: translatey(0px);
 	}
@@ -22,7 +30,7 @@ export const DownArrow = styled.div`
   width: 40px;
   height: 40px;
   color: white;
-  animation: ${rotate} 2s infinite;
+  animation: ${bounce} 2s infinite;
 `;
 
 export const Title = styled.h2`
@@ -43,7 +51,7 @@ export const Title = styled.h2`
 
 export const Header = styled.h1`
   font-size: 40px;
-  color: #FFFFFF;
+  color: ${THEME.colors.primaryColor};
 
   ${Media.Below.mobileLarge`
     font-size: 32px;
@@ -54,15 +62,15 @@ export const ContactInfoCtn = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-around;
-  padding-bottom: 32px;
+  padding-top: 32px;
 
   ${Media.Below.tablet`
-    padding: 0 7vw 32px;
+    padding: 32px 7vw 0;
   `}
 
   ${Media.Below.mobileLarge`
     flex-direction: column;
-    padding: 0 3vw 32px;
+    padding: 24px 3vw 0;
   `}
 `;
 

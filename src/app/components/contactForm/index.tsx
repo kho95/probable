@@ -40,7 +40,6 @@ const ContactForm: React.FC<any> = (...restProps): React.ReactElement => {
       <div>Message</div>
       <InputBox type="text" name="message" onChange={handleInputChange} />
       <SubmitButton type="submit" value="Submit" disabled={submitted} />
-
     </Form>
   );
 };

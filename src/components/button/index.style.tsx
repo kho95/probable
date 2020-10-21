@@ -55,6 +55,7 @@ export const StyledButton = styled(ButtonReset) <ButtonStyleProps>`
       `)}
 
       &:hover {
+        color: #FFFFFF;
         background-color: ${props.theme.colors.primaryColor};
       }
     `}

@@ -55,6 +55,7 @@ export const SubmitButton = styled.input`
   font-size: ${THEME.button.fontSize};
   font-weight: ${THEME.button.fontWeight};
   border: solid 1px ${THEME.colors.secondaryColor};
+  border-radius: 0;
   background-color: ${THEME.colors.white};
   transition: background-color 300ms ease-in-out;
 
@@ -65,5 +66,6 @@ export const SubmitButton = styled.input`
   &:hover {
     cursor: pointer;
     background-color: ${THEME.colors.primaryColor};
+    color: #FFFFFF;
   }
 `;
