@@ -23,9 +23,9 @@ import {
   ButtonCtn,
   DownArrow,
   Title,
-  Header,
   HeroContentCtn,
   ContactInfoCtn,
+  FooterLink,
   FormCtn,
   SectionCtn,
 } from './index.style';
@@ -38,7 +38,6 @@ const Home: React.FC<any> = (): React.ReactElement => {
         backgroundImg="https://i.imgur.com/7MUHhn2.jpg" overlayColor='#00000090'>
         <HeroContentCtn>
           <Image src='https://i.imgur.com/3OaGeti.png' alt="Otakiri 932" height="300px"></Image>
-          <Header>PROBABLE</Header>
         </HeroContentCtn>
         <DownArrow>
           <ArrowDownwardOutline></ArrowDownwardOutline>
@@ -49,7 +48,7 @@ const Home: React.FC<any> = (): React.ReactElement => {
         <TextWithImage img="https://i.imgur.com/7PPG2Ov.jpg">
           <Title>ABOUT US</Title>
           <Paragraph>
-            더 큰 가능성의 시작이라 (The beginning of greater possibilites.)”는 프라버블의 슬로건을 통해 해외 및 국내의 가능성 있는 상품을 투자 제작 및 유통하고 있습니다.
+            더 큰 가능성의 시작이라 (The beginning of greater possibilities)는 프라버블의 슬로건을 통해 해외 및 국내의 가능성 있는 상품을 투자 제작 및 유통하고 있습니다.
           </Paragraph>
           <Paragraph>
             잠재력(Potential), 가능성(Possibility) 잠재된 가능성을 알아보는 기업이 되겠습니다.
@@ -59,17 +58,16 @@ const Home: React.FC<any> = (): React.ReactElement => {
             프라버블 코리아가 함께 하겠습니다..
           </Paragraph>
           <Paragraph>
-            대표이사 / CEO
-          </Paragraph>
-          <Paragraph>
+            대표이사 / CEO<br />
             Abel Yoo
           </Paragraph>
         </TextWithImage>
+        <></>
       </Section>
 
       <Section id="products">
         <Title>OUR PRODUCTS</Title>
-        <TextWithImage img="https://i.imgur.com/9a7duqW.jpg" imgRight={true}>
+        <TextWithImage img="https://i.imgur.com/9a7duqW.jpg" smallImg imgRight={true}>
           <Title>Otakiri - New Zealand</Title>
           <Paragraph>
             뉴질랜드 북섬 중심부에 위치한 동부 플랜티, 오타키리 지역은 수백만 년
@@ -98,32 +96,34 @@ const Home: React.FC<any> = (): React.ReactElement => {
         </TextWithImage>
       </Section>
 
-      <Section id="contact-us">
-        <Title>CONTACT US</Title>
-        <ContentLayout wrap>
-          <ContentLayout desktopWidth="40%" tabletWidth="100%">
+      <Section backgroundColor="#f0f0f0" id="contact-us">
+        <ContentLayout wrap={true}>
+          <ContentLayout desktopWidth="40%" tabletWidth="100%" column>
+            <Title>GET IN TOUCH</Title>
             <FormCtn>
               <ContactForm />
             </FormCtn>
           </ContentLayout>
-          <ContentLayout desktopWidth="60%" tabletWidth="100%" column={true}>
+          <ContentLayout desktopWidth="60%" tabletWidth="100%" column>
             <ContentLayout justify="center">
-              <Map />
+              <Map coordinates={{
+                coordinates: {
+                  lat: +37.50238,
+                  lng: +126.76234
+                },
+                zoom: 16,
+              }} />
             </ContentLayout>
             <ContentLayout justify="space-between">
               <ContactInfoCtn>
                 <SectionCtn>
-                  probable@probable.co.kr<br />
-                  Ph: (+82) 010-7917-0906<br />
+                  Email: <FooterLink href="mailto:probable@probable.co.kr">probable@probable.co.kr</FooterLink><br />
+                  Phone: (+82) 010-7917-0906<br />
                   Fax: 032-204-2787
                 </SectionCtn>
                 <SectionCtn>
                   경기도 부천시 소향로 131, <br />
                   일산빌딩 7층 131호 (중동)<br /><br />
-                  131 Sohyang-ro, 7th floor,<br />
-                  Jung 1(il)-dongWonmi-gu, <br />
-                  Bucheon, Gyeonggi-do, <br />
-                  South Korea<br />
                 </SectionCtn>
               </ContactInfoCtn>
             </ContentLayout>

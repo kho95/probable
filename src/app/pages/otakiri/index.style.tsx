@@ -24,6 +24,27 @@ export const HeroImageLayout = styled.div`
   }
 `;
 
+export const ImageAddressCtn = styled.div`
+  display: flex;
+  align-items: center;
+  flex: 1 0 40%;
+  padding-bottom: 48px;
+
+  ${Media.Below.tablet`
+    flex: 1 0 100%;
+    width: 100%;
+    padding-bottom: 32px;
+  `}
+`;
+
+export const ImageAddressContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  
+`;
+
 export const Title = styled.h2`
   font-size: 24px;
   margin-bottom: ${THEME.spacing.spacing['05']};
@@ -79,7 +100,7 @@ export const HeroText = styled.h1`
 
 export const WhiteTitle = styled.h2`
   font-size: 24px;
-  color: #B4ACA6;
+  color: white;
   margin-bottom: ${THEME.spacing.spacing['05']};
 
   ${Media.Below.tablet`

@@ -14,12 +14,14 @@ import TextWithImage from '../../components/text-with-image';
 import PageLayout from '../../components/pageLayout';
 import Section from '../../components/section';
 import SectionBackground from '../../components/section-background';
+import Map from '../../components/google-map';
 
 import {
   HeroImageLayout,
   LogoImage,
   LogoParagraph,
-  HeroImage,
+  ImageAddressContent,
+  ImageAddressCtn,
   HeroText,
   MineralsParagraph,
   Title,
@@ -31,67 +33,63 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
   return (
     <PageLayout>
       <HeroVideo
-        backgroundImg="https://i.imgur.com/8pj4WJj.jpg" overlayColor='#FFFFFF70'>
+        backgroundImg="https://i.imgur.com/TS0OYuP.png">
         <ContentLayout align='center' column>
           <ContentLayout align='center'>
             <HeroText>A PREMIUM WATER DESIGNED WITH HOSPITALITY IN MIND</HeroText>
           </ContentLayout>
-          <HeroImageLayout>
-            <ContentLayout desktopWidth="50%" mobileLargeWidth="100%" align='center' column>
-              <HeroImage src='https://i.imgur.com/uvKX20C.jpg' alt="Top of Otakiri 932 glass bottle" height="300px"></HeroImage>
-            </ContentLayout>
-            <ContentLayout desktopWidth="50%" mobileLargeWidth="100%" align='center' column>
-              <HeroImage src='https://i.imgur.com/9a7duqW.png' alt="Otakiri 932" height="300px"></HeroImage>
-            </ContentLayout>
-          </HeroImageLayout>
         </ContentLayout>
       </HeroVideo>
 
       <Section>
-        <Title>ABOUT OTAKIRI</Title>
         <TextWithImage img="https://i.imgur.com/JndwWtY.png">
+          <Title>ABOUT OTAKIRI</Title>
           <Paragraph>
-            오타키리는 뉴질랜드 북섬 중심부에 위치한<br />
-            동부 플랜티 만은 수백만 년 동안<br />
-            산업과 인간의 개입이 없었던<br />
-            천연 그대로 자연을 간직 하고 있는 아름다운 지역입니다.
+            뉴질랜드 북섬 중심부에 있는 오타키리 동부 플랜티 만은<br />
+            수백만 년 동안 인간과 산업의 흔적이 없었던 천연 그대로의 지역입니다.<br />
+            오타키리 물은 오타키리 지역 땅 밑에 있는 특유의 성분들을<br />
+            모두 흡수함으로써 단 한 모금만으로도 우월함을 선사합니다.
           </Paragraph>
           <Paragraph>
-            평방 3km당 2명 미안의 사람들이 살고 있으며<br />
-            이곳은 자연으로 부터 진정한 축복을 받고 있습니다.
+            Situated in the heart of New Zealand’s North Island,<br />
+            The Eastern Bay of Plenty has continued to remain<br />
+            free from industry and human intervention for millions of years.<br />
+            The Otakiri Aquifer is Artesian and absorbs essential<br />
+            characteristics from its subterranean environment.<br />
+            one sip from the Otakiri aquifer confirms it is superiority.
           </Paragraph>
         </TextWithImage>
         <div> </div>
       </Section>
 
       <Section id="products" backgroundColor="black">
-        <TextWithImage img="https://i.imgur.com/WPGyypW.jpg" imgRight={true} textColor="#B4ACA6">
+        <TextWithImage img="https://i.imgur.com/WPGyypW.jpg" imgRight={true} textColor="white">
           <WhiteTitle>THE WATER</WhiteTitle>
           <Paragraph>
-            VIP를 위해 탄생한 프리미엄 샘물
+            오타키리 932 물은 매우 맑고 깨끗하여 <br />
+            상쾌한 맛을 선사합니다.
           </Paragraph>
           <Paragraph>
-            오타키리 리저브에는 그 어느 곳 보다 뛰어난 샘물이 있습니다.
+            오타키리 물의 출처는 수 문학자들<br />
+            (Hydrologists)이 ‘932’란 이름으로<br />
+            지정한 알티시안(Artesian) 장소입니다.
           </Paragraph>
           <Paragraph>
-            알티시안 (Artesian) 우물에서 나온 이 물은 자연적으로 광물 (Mineral) 이 낮아서<br />
-            물이 매우 맑고 세밀한 상쾌함을 선사합니다.
+            알티시안(Artesian) 우물에서 나온<br />
+            이 물은 물 고유의 청정함이<br />
+            그대로 전달될 수 있도록<br />
+            수원지에서 바로 제조됩니다.
           </Paragraph>
           <Paragraph>
-            오타키리 물은 오타키리 지역 땅 밑에 있는 지하 환경에서 나오는 특유의 특질<br />
-            (Characteristic, Mineral) 을 모두 흡수합니다.
+            지하 200m 밑에서부터<br />
+            물 자체의 압력으로 솟아올라<br />
+            일 년 내내 계절이 바뀌어도<br />
+            물 수압은 변함이 없습니다.
           </Paragraph>
           <Paragraph>
-            오타키리 932는 마그네슘 함량이 높고 나트륨 함량과 질산염 수치가 매우 낮으며<br />
-            전 세계적으로 최고 수준의 품질을 증명합니다.<br />
-            또한 치매 예방 성분으로 적합한 실리카 성분 함량 높습니다.
+            세계적으로 증명된 오타키리 932
+            높은 품질을 지금 바로 경험해 보세요.
           </Paragraph>
-          <Paragraph>
-            오타키리 932는 자연의 완벽한 작품을 구체화한 듯<br />
-            물에 구성이 완벽하게 균형을 이루고 있습니다.
-          </Paragraph>
-          <div>
-          </div>
         </TextWithImage>
       </Section>
 
@@ -99,24 +97,12 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
         <TextWithImage img="https://i.imgur.com/jujTON7.jpg">
           <Title>The Taste of 932</Title>
           <Paragraph>
-            오타키리 932 물의 출처는 수 문학자들(Hydrologists)이<br />
-            오타키리에 부여한 고유 식별 번호입니다.
-          </Paragraph>
-          <Paragraph>
-            932 대수층은 남반구에서 가장 깊은 대수층입니다.<br />
-            지하 200m 밑에서부터 물 혼자만의 압력으로 땅 위로 물이 솟아오릅니다.<br />
-            일 년 내내 계절이 바뀌어도 물 수압은 변함이 없습니다.
-          </Paragraph>
-          <Paragraph>
-            물 고유의 청점함(Purity)이 그대로 전달될 수 있도록<br />
-            수원지에서 바로 제조됩니다.
-          </Paragraph>
-          <Paragraph>
             Carbonation
           </Paragraph>
           <Paragraph>
-            오타키리 물은 가볍게 탄산염화되어 있고 낮은 TDS (Total Dissoloved Solids)<br />
-            수치를 가지고 있습니다. 음식과 같이 섭취했을때 맛이나 느낌이 강하지 않으며<br />
+            오타키리 물은 가볍게 탄산염화되어 있고 낮은<br />
+            TDS(Total Dissolved Solids) 수치를 가지고 있습니다.<br />
+            음식과 같이 섭취했을 때 맛이나 느낌이 강하지 않으며<br />
             물만 섭취할 경우 상쾌함과 청결한 맛을 선사합니다.
           </Paragraph>
           <Paragraph>
@@ -177,7 +163,7 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
       </Section>
 
       <Section>
-        <ContentLayout wrap>
+        <ContentLayout wrap={'true'}>
           <ContentLayout desktopWidth="25%" tabletWidth="50%" mobileLargeWidth="100%" align='center' column={true}>
             <Image src='https://i.imgur.com/ozgWSzw.png' alt="Otakiri 932 still glass bottle" height="300px"></Image>
             <Paragraph align='center'>
@@ -221,6 +207,7 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
             </Paragraph>
           </ContentLayout>
         </ContentLayout>
+        <></>
       </Section>
 
       <Section>
@@ -228,8 +215,8 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
         <LogoParagraph >
           <ContentLayout>
             <Paragraph>
-              EU 자격증은 크게 3가지로 나눠집니다. 미네랄 워터 (Mineral water), 스프링 워터 (Springwater) 그리고병에 담긴 보틀 워터 (Bottled water) 입니다. 미네랄워터와 스프링 워터는 무조건 땅 밑에서 지정된 물이어야 하며 살균 절차를 거치지 않고 바로 마셔야 안전한 물입니다. 이 두 종류에 물은 항상 지정된 수원지에서 바로 제조되어야 하며 자연산 미네랄 물은 안정적이고 일관적인 미네랄 구성을 보장해야 합니다. EU 자격증 중에서 자연산 미네랄 자격증 (Natural mineral water)이 제일 프리미엄 자격증입니다. Otakiri 932는 EU 자격증 중에서 제일 프리미엄 자격증인 자연산 미네랄 물 (Natural mineral water) 자격증을 보유하고 있습니다.
-          </Paragraph>
+              EU 자격증은 크게 3가지로 나눠집니다. 자연산 미네랄 물(Natural mineral water), 샘물(Spring water), 병에 담긴 생수(Bottled drinking water) 자연산 미네랄 물과 샘물은 지정된 수원지에서 바로 제조되어야 하며 살균 절차를 거치지 않고 바로 마셔야 안전한 물입니다. 샘물의 미네랄 구성은 자주 변동하며 자연산 미네랄 물은 안정적이고 일관적인 미네랄 구성을 보장합니다. Otakiri 932는 3가지 EU 자격증 중에서 제일 프리미엄 자격증인 자연산 미네랄 물(Natural mineral water) 자격증을 가지고 있습니다.
+           </Paragraph>
           </ContentLayout>
           <ContentLayout>
             <LogoImage src='https://i.imgur.com/vvhjxzG.png'></LogoImage>
@@ -238,11 +225,11 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
         <LogoParagraph>
           <ContentLayout>
             <Paragraph>
-              Otakiri 932는 바이오 그로 (Bio Gro) 자격인증을 받은 공장에서 생산됩니다. 바이오 그로는 정확하고 세밀한 3단계의 자격 인증 절차가 있습니다.<br />
+              Otakiri 932는 바이오 그로(Bio Gro) 자격인증을 받은 공장에서 생산됩니다. 바이오그로는 정확하고 세밀한 3단계의 자격 인증 절차가 있습니다.<br />
               1) 유기물 관리 공장 평가<br />
-              2) 바이오 그로 심사원이 현장검사<br />
-              3) 독립적인 자격 인증서입니다.<br />
-              바이오 그로는 매년 심사 절차가 있으며 바이오 그로 뉴질랜드 심사 기준은 세계적인 심사 기준과 일치 합니다. 바이오 그로는 1년에 4번 세계 적인 기관들로보터 심사를 받음으로써, 쎄계적인 기준과 동일함을 증명합니다. 이런 심사 과정은 긴 시간과 노력이 필요함으로 소비자들에게 안심하고 믿을 수 있는 제품을 제공하는 것이 최우선이기에 매년 검사를 진행합니다.
+              2) 바이오그로 심사원의 현장검사<br />
+              3) 독립적인 자격 인증서<br />
+              이런 심사 과정은 긴 시간과 노력을 보여줍니다. 바이오그로는 매년 전 세계 기관들로부터 최고 수준의 엄격한 감사를 진행하며 국제 표준을 준수하고 있는지 확인합니다. Otakiri 932는 소비자에게 안전하고 믿을 수 있는 제품을 제공합니다
           </Paragraph>
           </ContentLayout>
           <ContentLayout>
@@ -252,7 +239,7 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
         <LogoParagraph>
           <ContentLayout>
             <Paragraph>
-              (Halal) 할랄은 아랍어로 허용이라는 뜻을 가지고 있습니다. 법적으로 먹고 쓸 수 있는 제품을 말합니다. 할랄 자격 인증서는 소비자들에 자연적인 제품을 자연 형태 그대로 공급되었다는 사실을 100% 증명합니다. 특히 뉴질랜드 같은,식품 및 음료 법이 엄중한 나라에서 할랄 인증서를 보유하는 것이 매우 중요합니다. 제품에 대한 확신 필요하시다면  할랄 자격 인증서가 있는 Otakiri 932 제품을 구매하세요.
+              할랄(Halal)은 아랍어로 ‘허용’이라는 뜻을 가지고 있습니다. 법적으로 먹고 쓸 수 있는 제품을 말합니다. 할랄 자격 인증서는 소비자들에게 자연적인 제품을 자연형태 그대로 공급되었다는 사실을 100% 증명합니다. 뉴질랜드처럼 식품 및 음료 법이 엄중한 나라에서는 할랄 인증서를 보유하는 것이 매우 중요합니다
             </Paragraph>
           </ContentLayout>
           <ContentLayout>
@@ -262,7 +249,7 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
         <LogoParagraph>
           <ContentLayout>
             <Paragraph>
-              (Kosher) 코셔 자격 인증된 물은 타당함과 순수함이 검증된 제품입니다. 코셔 자격 인증서는 유태인의 식이요법 기준에 맞춰서 심사합니다. 공장에서부터 물이 가공되는 모든 과정까지 퀄리티와 제품의 순수함을 수시로 검사합니다. Otakiri 932도 빠짐없이 코셔 심사를 받으며 자격 인증서를 보유 중입니다.코셔 자격 인증서는 소비자들 사이에서 높은 퀄리티와 청정함을 증명합니다.
+              코셔(Kosher) 자격증이 인증된 물은 순수함과 타당함이 검증된 제품입니다. 코셔 자격 인증서는 유대인의 식이요법 기준에 맞춰서 심사합니다. 공장에서부터 물이 가공되는 모든 과정까지 제품의 퀄리티와 순수함을 수시로 검사합니다. Otakiri 932도 빠짐없이 코셔 심사를 받으며 자격 인증서를 보유 중입니다. 코셔 자격 인증서는 소비자들 사이에서 높은 품질과 청정함을 증명합니다
             </Paragraph>
           </ContentLayout>
           <ContentLayout>
@@ -272,41 +259,52 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
       </Section>
       <Section>
         <ContentLayout wrap>
-          <ContentLayout desktopWidth="33%" tabletWidth="50%" mobileLargeWidth="100%" align='center' column={true}>
-            <Image src='https://i.imgur.com/2oV0z4F.png' alt="Otakiri springs logo" height="200px"></Image>
-          </ContentLayout>
-          <ContentLayout desktopWidth="33%" tabletWidth="50%" mobileLargeWidth="100%" align='center' justify='center' column={true}>
-            <Paragraph align='center' column>
-              57 Johnson Road,<br />
-              Wakatane. Bay of Plenty,<br />
-              New Zealand<br /><br />
-              +64 0800 OTAKIRI<br />
-              (0800 682 547)<br /><br />
-              <a href="http://www.otakirisprings.co.nz" target="_blank">www.otakirisprings.co.nz</a>
-            </Paragraph>
-            <Button
-              isSecondary
-              handleClick={(e): void => {
-                e.preventDefault();
-                navigate('/#contact-us');
-              }}
-            >
-              Enquire
-          </Button>
+          <ImageAddressCtn desktopWidth="40%" tabletWidth="50%" mobileLargeWidth="100%">
+            <ImageAddressContent>
+              <Image src='https://i.imgur.com/2oV0z4F.png' alt="Otakiri springs logo" height="200px"></Image>
+            </ImageAddressContent>
+            <ImageAddressContent desktopWidth="40%" tabletWidth="50%" mobileLargeWidth="100%" align='center' column>
+              <Paragraph align='center' column>
+                57 Johnson Road,<br />
+                Wakatane. Bay of Plenty,<br />
+                New Zealand<br /><br />
+                +64 0800 OTAKIRI<br />
+                (0800 682 547)<br /><br />
+                <a href="http://www.otakirisprings.co.nz" target="_blank">www.otakirisprings.co.nz</a>
+              </Paragraph>
+              <Button
+                isSecondary
+                handleClick={(e): void => {
+                  e.preventDefault();
+                  navigate('/#contact-us');
+                }}>
+                Enquire
+              </Button>
+            </ImageAddressContent>
+          </ImageAddressCtn>
+          <ContentLayout desktopWidth="60%" tabletWidth="100%" align='center' justify='center'>
+            <Map coordinates={{
+              coordinates: {
+                lat: -38.00983,
+                lng: +176.74557
+              },
+              zoom: 10,
+            }} />
           </ContentLayout>
         </ContentLayout>
-        <div></div>
+        <></>
       </Section>
-      <SectionBackground backgroundSrc='https://i.imgur.com/KVN4R7y.jpg'>
+      <SectionBackground backgroundSrc='https://i.imgur.com/TwD4t39.jpg'>
         <Button
           isSecondary
           handleClick={(e): void => {
             e.preventDefault();
-            window.open("https://drive.google.com/uc?export=download&id=1HpgXOIaLENhIGNM_d-DpOh4puKx_Pqoh", "_blank")
+            window.open("https://drive.google.com/uc?export=download&id=1fywyv05R_QIj2TFld5QViJ041aIpWsM8", "_blank")
           }}
         >
           Download Brochure
-          </Button>
+        </Button>
+        <></>
       </SectionBackground>
     </PageLayout >
   );

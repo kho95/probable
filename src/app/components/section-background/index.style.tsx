@@ -36,8 +36,8 @@ export const SectionCtn = styled.div<SectionProps>`
   ${(props): SimpleInterpolation =>
     css && props.backgroundSrc &&
     `
-      background: url('${props.backgroundSrc}') no-repeat;
+      background: url('${props.backgroundSrc}') no-repeat #a0a0a0;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
     `}
 `;

@@ -9,6 +9,7 @@ interface ImageProps {
 
 export const Image = styled.img<ImageProps>`
   width: 100%;
+  object-fit: contain;
 
   ${Media.Below.tablet`
     width: 60%;

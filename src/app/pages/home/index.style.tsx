@@ -24,6 +24,9 @@ const bounce = keyframes`
 	}
 `;
 
+export const FooterLink = styled.a`
+`;
+
 export const DownArrow = styled.div`
   position: absolute;
   bottom: 20px;
@@ -46,15 +49,6 @@ export const Title = styled.h2`
     text-align: center;
     font-size: 18px;
     margin-bottom: ${THEME.spacing.spacing['04']};
-  `}
-`;
-
-export const Header = styled.h1`
-  font-size: 40px;
-  color: ${THEME.colors.primaryColor};
-
-  ${Media.Below.mobileLarge`
-    font-size: 32px;
   `}
 `;
 

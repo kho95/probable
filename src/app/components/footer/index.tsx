@@ -20,24 +20,16 @@ const Footer: React.FC<any> = (): React.ReactElement => {
       <ContentCtn>
         <SectionCtn>
           <FooterText>
-            <FooterLink href="mailto:probable@probable.co.kr">probable@probable.co.kr</FooterLink><br />
-            Ph: (+82) 010-7917-0906<br />
+            Email: <FooterLink href="mailto:probable@probable.co.kr">probable@probable.co.kr</FooterLink><br />
+            Phone: (+82) 010-7917-0906<br />
             Fax: 032-204-2787<br />
-            <br />
-            사업자 번호: 782-22-01090<br />
-            통신관매 신고 번호: 2020 - 경기부천 - 0310호
           </FooterText>
         </SectionCtn>
 
         <SectionCtn>
           <FooterText>
-            경기도 부천시 소향로 131,<br />
-            일산빌딩 7층 131호 (중동)<br />
-            <br />
-            131 Sohyang-ro, 7th floor,<br />
-            Jung 1(il)-dongWonmi-gu,<br />
-            Bucheon, Gyeonggi-do,<br />
-            South Korea<br />
+            사업자 번호: 782-22-01090<br />
+            통신관매 신고 번호: 2020 - 경기부천 - 0310호<br />
             <br />
             고객센터 운영시간<br />
             (훨~금) 9:00 ~ 18:00<br />

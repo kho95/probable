@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import LoginRequest from '../../../hooks/loginRequest';
 import {
+  InputArea,
   InputBox,
   Form,
   SubmitButton,
@@ -31,14 +32,10 @@ const ContactForm: React.FC<any> = (...restProps): React.ReactElement => {
 
   return (
     <Form onSubmit={submit}>
-      <span>Full name</span>
-      <InputBox type="text" name="fullName" onChange={handleInputChange} />
-      <span>Email</span>
-      <InputBox type="email" name="email" onChange={handleInputChange} />
-      <span>Phone number</span>
-      <InputBox type="tel" name="phoneNumber" onChange={handleInputChange} />
-      <span>Message</span>
-      <InputBox type="text" name="message" onChange={handleInputChange} />
+      <InputBox type="text" name="fullName" placeholder="Full name" onChange={handleInputChange} />
+      <InputBox type="email" name="email" placeholder="Email" onChange={handleInputChange} />
+      <InputBox type="tel" name="phoneNumber" placeholder="Phone number" onChange={handleInputChange} />
+      <InputArea type="text" name="message" placeholder="Message" onChange={handleInputChange} />
       <SubmitButton type="submit" value="Submit" disabled={submitted} />
     </Form>
   );

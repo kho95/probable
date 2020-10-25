@@ -1,7 +1,6 @@
 import styled, { css, SimpleInterpolation } from 'styled-components';
 
 import Media from '../../../assets/styles/media';
-import THEME from '../../../assets/styles/config';
 
 interface HeaderProps {
   backgroundImg?: string;
@@ -14,7 +13,8 @@ export const HeaderCtn = styled.div<HeaderProps>`
   max-height: 680px;
   height: 55vh;
   background-position: center center !important;
-  background-size: cover !important;
+  background-size: contain !important;
+  background-color: white;
 
   ${(props): SimpleInterpolation =>
     css &&

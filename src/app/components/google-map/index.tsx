@@ -1,28 +1,14 @@
 import React from 'react'
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import { GoogleMap, Marker, LoadScript } from '@react-google-maps/api';
 
 const containerStyle = {
-  width: '400px',
-  height: '400px'
+  width: '100%',
+  height: '30vh'
 };
 
-const center = {
-  lat: +37.5023831,
-  lng: +126.760824
-};
-
-function Map() {
-  const [map, setMap] = React.useState(null)
-
-  const onLoad = React.useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds();
-    map.fitBounds(bounds);
-    setMap(map)
-  }, [])
-
-  const onUnmount = React.useCallback(function callback(map) {
-    setMap(null)
-  }, [])
+function Map(coordinates: any) {
+  const center = coordinates.coordinates.coordinates;
+  const zoom = coordinates.coordinates.zoom;
 
   return (
     <LoadScript
@@ -31,15 +17,18 @@ function Map() {
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
-        zoom={18}
-        onLoad={onLoad}
-        onUnmount={onUnmount}
+        zoom={zoom}
       >
-        <img src='https://i.imgur.com/FOHu0ED.png'></img>
+        <Marker position={center}>
+          <div style={{ backgroundColor: "red", padding: 10 }}>
+            <span>SF</span>
+          </div>
+        </Marker>
         <></>
       </GoogleMap>
     </LoadScript>
   )
 }
+
 
 export default React.memo(Map)

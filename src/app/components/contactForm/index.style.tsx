@@ -1,4 +1,4 @@
-import styled, { css, SimpleInterpolation } from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import Media from '../../../assets/styles/media';
 import THEME from '../../../assets/styles/config';
@@ -15,8 +15,27 @@ export const InputBox = styled.input`
   padding: 5px;
   font-size: 18px;
   width: 100%;
-  background-color: ${THEME.colors.extraLightGrey};
+  background-color: ${THEME.colors.white};
+  border: 1px solid transparent;
 
+  transition: border 0.3s ease-in-out;
+
+  &:focus {
+    border: 1px solid ${THEME.colors.primaryColor};
+  }
+`;
+
+export const InputArea = styled.textarea`
+  margin-bottom: 20px;
+  padding: 5px;
+  font-size: 18px;
+  height: 120px;
+  width: 100%;
+  resize: none;
+  background-color: ${THEME.colors.white};
+  border: 1px solid transparent;
+  transition: border 0.3s ease-in-out;
+  
   &:focus {
     border: 1px solid ${THEME.colors.primaryColor};
   }
