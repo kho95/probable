@@ -8,11 +8,12 @@ interface ParagraphProps {
   children: any,
   align?: string,
   column?: boolean,
+  small?: boolean,
 }
 
-const Paragraph: React.FC<ParagraphProps> = ({ children, column, align }): React.ReactElement => {
+const Paragraph: React.FC<ParagraphProps> = ({ children, column, align, small }): React.ReactElement => {
   return (
-    <StyledParagraph align={align} column={column}>
+    <StyledParagraph align={align} column={column} small={small}>
       {children}
     </StyledParagraph>
   );

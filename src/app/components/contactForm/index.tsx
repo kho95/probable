@@ -36,7 +36,7 @@ const ContactForm: React.FC<any> = (...restProps): React.ReactElement => {
       <InputBox type="email" name="email" placeholder="Email" onChange={handleInputChange} />
       <InputBox type="tel" name="phoneNumber" placeholder="Phone number" onChange={handleInputChange} />
       <InputArea type="text" name="message" placeholder="Message" onChange={handleInputChange} />
-      <SubmitButton type="submit" value="Submit" disabled={submitted} />
+      <SubmitButton type="submit" value="Send Message" disabled={submitted} />
     </Form>
   );
 };

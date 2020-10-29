@@ -6,6 +6,7 @@ import THEME from '../../assets/styles/config';
 interface ParagraphProps {
   align?: string;
   column?: boolean;
+  small?: boolean;
 }
 
 export const StyledParagraph = styled.span<ParagraphProps>`
@@ -22,6 +23,12 @@ export const StyledParagraph = styled.span<ParagraphProps>`
     css && props.column &&
     `
     flex-direction: column;
+  `}
+
+  ${(props): SimpleInterpolation =>
+    css && props.small &&
+    `
+    font-size: 14px;
   `}
 
   ${Media.Below.tablet`

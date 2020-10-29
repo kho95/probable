@@ -20,6 +20,7 @@ import Map from '../../components/google-map';
 import { ArrowDownwardOutline } from '@styled-icons/evaicons-outline/ArrowDownwardOutline';
 
 import {
+  Bold,
   ButtonCtn,
   DownArrow,
   Title,
@@ -97,13 +98,18 @@ const Home: React.FC<any> = (): React.ReactElement => {
       </Section>
 
       <Section backgroundColor="#f0f0f0" id="contact-us">
+        <ContentLayout column>
+          <Title>CONTACT US</Title>
+          <ContactInfoCtn>
+            <SectionCtn>
+              <Bold>Address: </Bold>경기도 부천시 소향로 131,  일산빌딩 7층 131호 (중동)<br />
+              <Bold>Email: </Bold><FooterLink href="mailto:probable@probable.co.kr">probable@probable.co.kr</FooterLink><br />
+              <Bold>Phone: </Bold>(+82) 010-7917-0906<br />
+              <Bold>Fax: </Bold>032-204-2787
+            </SectionCtn>
+          </ContactInfoCtn>
+        </ContentLayout>
         <ContentLayout wrap={true}>
-          <ContentLayout desktopWidth="40%" tabletWidth="100%" column>
-            <Title>GET IN TOUCH</Title>
-            <FormCtn>
-              <ContactForm />
-            </FormCtn>
-          </ContentLayout>
           <ContentLayout desktopWidth="60%" tabletWidth="100%" column>
             <ContentLayout justify="center">
               <Map coordinates={{
@@ -114,19 +120,12 @@ const Home: React.FC<any> = (): React.ReactElement => {
                 zoom: 16,
               }} />
             </ContentLayout>
-            <ContentLayout justify="space-between">
-              <ContactInfoCtn>
-                <SectionCtn>
-                  Email: <FooterLink href="mailto:probable@probable.co.kr">probable@probable.co.kr</FooterLink><br />
-                  Phone: (+82) 010-7917-0906<br />
-                  Fax: 032-204-2787
-                </SectionCtn>
-                <SectionCtn>
-                  경기도 부천시 소향로 131, <br />
-                  일산빌딩 7층 131호 (중동)<br /><br />
-                </SectionCtn>
-              </ContactInfoCtn>
-            </ContentLayout>
+          </ContentLayout>
+          <ContentLayout desktopWidth="40%" tabletWidth="100%">
+            <FormCtn>
+              <Title>GET IN TOUCH</Title>
+              <ContactForm />
+            </FormCtn>
           </ContentLayout>
         </ContentLayout>
       </Section>

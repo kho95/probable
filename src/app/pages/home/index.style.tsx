@@ -4,6 +4,10 @@ import { keyframes } from 'styled-components';
 import Media from '../../../assets/styles/media';
 import THEME from '../../../assets/styles/config';
 
+export const Bold = styled.span`
+  font-weight: bold;
+`;
+
 export const ButtonCtn = styled.div`
   display: flex;
 
@@ -25,6 +29,7 @@ const bounce = keyframes`
 `;
 
 export const FooterLink = styled.a`
+  color: #4285f4;
 `;
 
 export const DownArrow = styled.div`
@@ -60,24 +65,24 @@ export const HeroContentCtn = styled.div`
 export const ContactInfoCtn = styled.div`
   display: flex;
   width: 100%;
-  justify-content: space-around;
-  padding-top: 32px;
+  padding-bottom: 32px;
+  font-size: 14px;
 
   ${Media.Below.tablet`
-    padding: 32px 7vw 0;
+    padding-bottom: 32px;
   `}
 
   ${Media.Below.mobileLarge`
-    flex-direction: column;
-    padding: 24px 3vw 0;
+    padding-bottom: 24px;
   `}
 `;
 
 export const FormCtn = styled.div`
   display: flex;
+  flex-direction: column;
   width: 100%;
   min-width: 300px;
-  padding-right: 7vw;
+  padding-left: 7vw;
   padding-bottom: 80px;
 
   ${Media.Below.tablet`

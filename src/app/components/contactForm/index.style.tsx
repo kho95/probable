@@ -12,7 +12,7 @@ export const Form = styled.form`
 
 export const InputBox = styled.input`
   margin-bottom: 20px;
-  padding: 5px;
+  padding: 12px;
   font-size: 18px;
   width: 100%;
   background-color: ${THEME.colors.white};
@@ -27,7 +27,7 @@ export const InputBox = styled.input`
 
 export const InputArea = styled.textarea`
   margin-bottom: 20px;
-  padding: 5px;
+  padding: 12px;
   font-size: 18px;
   height: 120px;
   width: 100%;

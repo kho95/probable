@@ -19,6 +19,8 @@ export const ContentCtn = styled.div`
 export const ImageCtn = styled.button`
   display: flex;
   height: 35px;
+  width: 100%;
+  background-color: ${THEME.colors.secondaryColor};
 
   :hover {
     cursor: pointer;
@@ -31,6 +33,7 @@ export const ImageCtn = styled.button`
 
 export const ImageLogo = styled.img`
   height: 100%;
+  max-width: 100%;
 `;
 
 export const LogAJobBtn = styled.button`

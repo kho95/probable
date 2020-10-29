@@ -108,7 +108,7 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
           <Paragraph>
             Total Dissolved Solids
           </Paragraph>
-          <Paragraph>
+          <Paragraph small>
             <ContentLayout desktopWidth="30%">
               Low<br />
               Medium<br />
@@ -123,15 +123,15 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
           <Paragraph>
             Purity
           </Paragraph>
-          <Paragraph>
-            <ContentLayout desktopWidth="30%">
+          <Paragraph small>
+            <ContentLayout desktopWidth="30%" tabletWidth="50%">
               Superior<br />
               Very Good<br />
               Good<br />
               Acceptable<br />
               Potable
             </ContentLayout>
-            <ContentLayout desktopWidth="70%">
+            <ContentLayout desktopWidth="70%" tabletWidth="50%">
               0 - 1 mg/l ... Otakiri Source 932 0.3 mg/l<br />
               1 - 4 mg/l<br />
               4 - 7 mg/l<br />
@@ -142,7 +142,7 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
           <Paragraph>
             Acidity (pH)
           </Paragraph>
-          <Paragraph>
+          <Paragraph small>
             <ContentLayout desktopWidth="30%">
               1<br />
               7<br />
