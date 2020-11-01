@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import ReCAPTCHA from "react-google-recaptcha";
 
-import LoginRequest from '../../../hooks/loginRequest';
+import LoginRequest from '../../../hooks/sendContactUsRequest';
 import {
   InputArea,
   InputBox,
@@ -10,14 +11,16 @@ import {
 
 const ContactForm: React.FC<any> = (...restProps): React.ReactElement => {
 
-  // const [errorDisp, setErrorDisp] = useState(false);
+  const [errorDisp, setErrorDisp] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const siteKey = process.env.SENDGRID_API_KEY;
 
   const callback = (success: boolean) => {
     if (!success) {
-      //setErrorDisp(true);
+      setErrorDisp(true);
       console.log('Error!');
     } else {
+      setErrorDisp(false);
       console.log('Email sent!');
     }
   };
@@ -32,10 +35,19 @@ const ContactForm: React.FC<any> = (...restProps): React.ReactElement => {
 
   return (
     <Form onSubmit={submit}>
+      {errorDisp ?
+        <span>Unable to send your message. Please check if all fields have been filled or try again later.</span> :
+        <></>
+      }
       <InputBox type="text" name="fullName" placeholder="Full name" onChange={handleInputChange} />
       <InputBox type="email" name="email" placeholder="Email" onChange={handleInputChange} />
       <InputBox type="tel" name="phoneNumber" placeholder="Phone number" onChange={handleInputChange} />
-      <InputArea type="text" name="message" placeholder="Message" onChange={handleInputChange} />
+      <InputArea name="message" placeholder="Message" onChange={handleInputChange} />
+      <ReCAPTCHA
+        name="captcha"
+        sitekey={siteKey}
+        onChange={handleInputChange}
+      />
       <SubmitButton type="submit" value="Send Message" disabled={submitted} />
     </Form>
   );

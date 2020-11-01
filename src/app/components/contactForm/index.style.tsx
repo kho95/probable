@@ -70,6 +70,7 @@ export const ShowButton = styled.button`
 
 export const SubmitButton = styled.input`
   height: ${THEME.button.height};
+  margin-top; 20px;
   padding: 0 ${THEME.button.padding};
   font-size: ${THEME.button.fontSize};
   font-weight: ${THEME.button.fontWeight};
