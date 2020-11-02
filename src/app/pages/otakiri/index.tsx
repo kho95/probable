@@ -33,7 +33,7 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
   return (
     <PageLayout>
       <HeroVideo
-        backgroundImg="https://i.imgur.com/TS0OYuP.png">
+        backgroundImg='https://i.imgur.com/TS0OYuP.png'>
         <ContentLayout align='center' column>
           <ContentLayout align='center'>
             <HeroText>A PREMIUM WATER DESIGNED WITH HOSPITALITY IN MIND</HeroText>
@@ -42,7 +42,7 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
       </HeroVideo>
 
       <Section>
-        <TextWithImage img="https://i.imgur.com/JndwWtY.png">
+        <TextWithImage img='https://i.imgur.com/JndwWtY.png'>
           <Title>ABOUT OTAKIRI</Title>
           <Paragraph>
             뉴질랜드 북섬 중심부에 있는 오타키리 동부 플랜티 만은<br />
@@ -62,8 +62,8 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
         <div> </div>
       </Section>
 
-      <Section id="products" backgroundColor="black">
-        <TextWithImage img="https://i.imgur.com/WPGyypW.jpg" imgRight={true} textColor="white">
+      <Section id='products' backgroundColor='black'>
+        <TextWithImage img='https://i.imgur.com/WPGyypW.jpg' imgRight={true} textColor='white'>
           <WhiteTitle>THE WATER</WhiteTitle>
           <Paragraph>
             오타키리 932 물은 매우 맑고 깨끗하여 <br />
@@ -94,7 +94,7 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
       </Section>
 
       <Section>
-        <TextWithImage img="https://i.imgur.com/jujTON7.jpg">
+        <TextWithImage img='https://i.imgur.com/jujTON7.jpg'>
           <Title>The Taste of 932</Title>
           <Paragraph>
             Carbonation
@@ -109,12 +109,12 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
             Total Dissolved Solids
           </Paragraph>
           <Paragraph small>
-            <ContentLayout desktopWidth="30%">
+            <ContentLayout desktopWidth='30%'>
               Low<br />
               Medium<br />
               High<br />
             </ContentLayout>
-            <ContentLayout desktopWidth="70%">
+            <ContentLayout desktopWidth='70%'>
               50 - 250 mg/l ... Otakiri Source 932 130 mg/l<br />
               250 - 500 mg/l<br />
               500 - 1500 mg/l<br />
@@ -124,14 +124,14 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
             Purity
           </Paragraph>
           <Paragraph small>
-            <ContentLayout desktopWidth="30%" tabletWidth="50%">
+            <ContentLayout desktopWidth='30%' tabletWidth='50%'>
               Superior<br />
               Very Good<br />
               Good<br />
               Acceptable<br />
               Potable
             </ContentLayout>
-            <ContentLayout desktopWidth="70%" tabletWidth="50%">
+            <ContentLayout desktopWidth='70%' tabletWidth='50%'>
               0 - 1 mg/l ... Otakiri Source 932 0.3 mg/l<br />
               1 - 4 mg/l<br />
               4 - 7 mg/l<br />
@@ -143,12 +143,12 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
             Acidity (pH)
           </Paragraph>
           <Paragraph small>
-            <ContentLayout desktopWidth="30%">
+            <ContentLayout desktopWidth='30%'>
               1<br />
               7<br />
               14<br />
             </ContentLayout>
-            <ContentLayout desktopWidth="60%">
+            <ContentLayout desktopWidth='60%'>
               Acidic (Sour)<br />
               Neutral (Sweet).  Otakiri Source 932 (6.8 -7.2)<br />
               Alkaline (Bitter)<br />
@@ -163,9 +163,9 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
       </Section>
 
       <Section>
-        <ContentLayout wrap={'true'}>
-          <ContentLayout desktopWidth="25%" tabletWidth="50%" mobileLargeWidth="100%" align='center' column={true}>
-            <Image src='https://i.imgur.com/ozgWSzw.png' alt="Otakiri 932 still glass bottle" height="300px"></Image>
+        <ContentLayout wrap={true}>
+          <ContentLayout desktopWidth='25%' tabletWidth='50%' mobileLargeWidth='100%' align='center' column={true}>
+            <Image src='https://i.imgur.com/ozgWSzw.png' alt='Otakiri 932 still glass bottle' height='300px'></Image>
             <Paragraph align='center'>
               OTAKIRI 932<br />
               STILL GLASS<br />
@@ -174,8 +174,8 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
               750ml / Case of 12<br />
             </Paragraph>
           </ContentLayout>
-          <ContentLayout desktopWidth="25%" tabletWidth="50%" mobileLargeWidth="100%" align='center' column={true}>
-            <Image src='https://i.imgur.com/TiX9Pyh.png' alt="Otakiri 932 sparkling glass bottle" height="300px"></Image>
+          <ContentLayout desktopWidth='25%' tabletWidth='50%' mobileLargeWidth='100%' align='center' column={true}>
+            <Image src='https://i.imgur.com/TiX9Pyh.png' alt='Otakiri 932 sparkling glass bottle' height='300px'></Image>
             <Paragraph align='center'>
               OTAKIRI 932<br />
               SPARKLING GLASS<br />
@@ -184,8 +184,8 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
               750ml / Case of 12<br />
             </Paragraph>
           </ContentLayout>
-          <ContentLayout desktopWidth="25%" tabletWidth="50%" mobileLargeWidth="100%" align='center' column={true}>
-            <Image src='https://i.imgur.com/noPzpuG.png' alt="Otakiri 932 still PET bottle" height="300px"></Image>
+          <ContentLayout desktopWidth='25%' tabletWidth='50%' mobileLargeWidth='100%' align='center' column={true}>
+            <Image src='https://i.imgur.com/noPzpuG.png' alt='Otakiri 932 still PET bottle' height='300px'></Image>
             <Paragraph align='center'>
               OTAKIRI 932<br />
               STILL PET<br />
@@ -195,8 +195,8 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
               1L / Case<br />
             </Paragraph>
           </ContentLayout>
-          <ContentLayout desktopWidth="25%" tabletWidth="50%" mobileLargeWidth="100%" align='center' column={true}>
-            <Image src='https://i.imgur.com/0yDwPDI.png' alt="Otakiri 932 sparkling PET bottle" height="300px"></Image>
+          <ContentLayout desktopWidth='25%' tabletWidth='50%' mobileLargeWidth='100%' align='center' column={true}>
+            <Image src='https://i.imgur.com/0yDwPDI.png' alt='Otakiri 932 sparkling PET bottle' height='300px'></Image>
             <Paragraph align='center'>
               OTAKIRI 932<br />
               SPARKLING PET<br />
@@ -259,18 +259,18 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
       </Section>
       <Section>
         <ContentLayout wrap>
-          <ImageAddressCtn desktopWidth="40%" tabletWidth="50%" mobileLargeWidth="100%">
+          <ImageAddressCtn desktopWidth='40%' tabletWidth='50%' mobileLargeWidth='100%'>
             <ImageAddressContent>
-              <Image src='https://i.imgur.com/2oV0z4F.png' alt="Otakiri springs logo" height="200px"></Image>
+              <Image src='https://i.imgur.com/2oV0z4F.png' alt='Otakiri springs logo' height='200px'></Image>
             </ImageAddressContent>
-            <ImageAddressContent desktopWidth="40%" tabletWidth="50%" mobileLargeWidth="100%" align='center' column>
+            <ImageAddressContent desktopWidth='40%' tabletWidth='50%' mobileLargeWidth='100%' align='center' column>
               <Paragraph align='center' column>
                 57 Johnson Road,<br />
                 Wakatane. Bay of Plenty,<br />
                 New Zealand<br /><br />
                 +64 0800 OTAKIRI<br />
                 (0800 682 547)<br /><br />
-                <a href="http://www.otakirisprings.co.nz" target="_blank">www.otakirisprings.co.nz</a>
+                <a href='http://www.otakirisprings.co.nz' target='_blank'>www.otakirisprings.co.nz</a>
               </Paragraph>
               <Button
                 isSecondary
@@ -282,7 +282,7 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
               </Button>
             </ImageAddressContent>
           </ImageAddressCtn>
-          <ContentLayout desktopWidth="60%" tabletWidth="100%" align='center' justify='center'>
+          <ContentLayout desktopWidth='60%' tabletWidth='100%' align='center' justify='center'>
             <Map coordinates={{
               coordinates: {
                 lat: -38.00983,
@@ -299,7 +299,7 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
           isSecondary
           handleClick={(e): void => {
             e.preventDefault();
-            window.open("https://drive.google.com/uc?export=download&id=1fywyv05R_QIj2TFld5QViJ041aIpWsM8", "_blank")
+            window.open('https://drive.google.com/uc?export=download&id=1fywyv05R_QIj2TFld5QViJ041aIpWsM8', '_blank')
           }}
         >
           Download Brochure

@@ -2,7 +2,7 @@ import React from 'react';
 
 import {
   StyleLayout,
-} from "./index.style";
+} from './index.style';
 
 interface ContentLayoutProps {
   children: any;

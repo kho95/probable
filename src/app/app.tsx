@@ -12,8 +12,8 @@ const App = () => {
     <AppStateProvider>
       <Navigation>
         <Router>
-          <Home path="/" />
-          <Otakiri path="otakiri" />
+          <Home path='/' />
+          <Otakiri path='otakiri' />
         </Router>
       </Navigation>
     </AppStateProvider>

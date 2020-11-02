@@ -12,7 +12,7 @@ function Map(coordinates: any) {
 
   return (
     <LoadScript
-      googleMapsApiKey="AIzaSyBY_wwUER12xGShJHgqGtNYtHaJAPefHR0"
+      googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAP}
     >
       <GoogleMap
         mapContainerStyle={containerStyle}

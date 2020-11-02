@@ -3,6 +3,11 @@ import styled, { css } from 'styled-components';
 import Media from '../../../assets/styles/media';
 import THEME from '../../../assets/styles/config';
 
+export const ErrorMessage = styled.span`
+  color: red;
+  margin-bottom: 20px;
+`;
+
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
@@ -70,7 +75,7 @@ export const ShowButton = styled.button`
 
 export const SubmitButton = styled.input`
   height: ${THEME.button.height};
-  margin-top; 20px;
+  margin-top: 20px;
   padding: 0 ${THEME.button.padding};
   font-size: ${THEME.button.fontSize};
   font-weight: ${THEME.button.fontWeight};

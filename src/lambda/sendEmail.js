@@ -6,7 +6,7 @@ let toEmail = new helper.Email('kho1995@gmail.com');
 let subject = 'Contact from Probable.co.kr';
 
 export async function handler(event, context, callback) {
-    let sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
+    let sg = require('sendgrid')(process.env.REACT_APP_SENDGRID_API_KEY);
 
     let content = new helper.Content('text/plain', 'Name:' + event.fullName + ' Email:' + event.email + ' Phone:' + event.phoneNumber + 'Message: ' + event.message);
     new helper.Email('kho1995@gmail.com');
@@ -17,7 +17,7 @@ export async function handler(event, context, callback) {
     //     method: 'post',
     //     url: 'https://www.google.com/recaptcha/api/siteverify',
     //     data: {
-    //         secret: process.env.CAPTCHA_SECRET_KEY,
+    //         secret: process.env.REACT_APP_CAPTCHA_SECRET_KEY,
     //         response: event.captchaResponse,
     //     },
     // });
