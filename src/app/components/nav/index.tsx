@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { navigate } from '@reach/router';
 
 import NavTab from '../../../components/navTab';
@@ -21,9 +21,31 @@ import logoImg from '../../../assets/images/probable-logo/logo.png';
 const Nav: React.FC<any> = (): React.ReactElement => {
   const [showNavDropdown, setNavDropdown] = useState(false);
 
+  function useOutsideAlerter(ref: any) {
+    useEffect(() => {
+      /**
+       * Alert if clicked on outside of element
+       */
+      function handleClickOutside(event: any) {
+        if (ref.current && !ref.current.contains(event.target) && showNavDropdown) {
+          setNavDropdown(false);
+        }
+      }
+      // Bind the event listener
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        // Unbind the event listener on clean up
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [ref]);
+  }
+
+  const wrapperRef = useRef(null);
+  useOutsideAlerter(wrapperRef);
+
   return (
-    <React.Fragment>
-      <NavCtn>
+    <>
+      <NavCtn ref={wrapperRef}>
         <ContentCtn>
           <ImageCtn onClick={(e): void => {
             e.preventDefault();
@@ -70,7 +92,7 @@ const Nav: React.FC<any> = (): React.ReactElement => {
         </ContentCtn>
       </NavCtn>
       <NavSpacer />
-    </React.Fragment>
+    </>
   );
 };
 
