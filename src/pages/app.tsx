@@ -1,7 +1,6 @@
 import React from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Router } from '@reach/router';
-require('dotenv').config();
 
 import AppStateProvider from '../app/context/appStateProvider';
 import Navigation from '../app/components/Navigation';
