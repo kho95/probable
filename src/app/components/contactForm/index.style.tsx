@@ -84,9 +84,9 @@ export const SubmitButton = styled.input`
   background-color: ${THEME.colors.white};
   transition: background-color 300ms ease-in-out;
 
-  ${Media.Below.mobile(css`
+  ${Media.Below.mobile`
     width: 100%;
-  `)}
+  `}
   
   &:hover {
     cursor: pointer;

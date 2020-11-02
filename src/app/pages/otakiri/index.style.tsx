@@ -98,6 +98,34 @@ export const HeroText = styled.h1`
   text-align: center;
 `;
 
+export const SmallTextTitle = styled.span`
+  margin-bottom: 24px;
+  ${Media.Below.tablet`
+    text-decoration: underline;
+    text-align: center;
+  `}
+`;
+
+export const SmallTextThirty = styled.span`
+  display: flex;
+  flex: 1 0 30%;
+
+  ${Media.Below.tablet`
+    flex: 1 0 50;
+    justify-content: center;
+  `}
+`;
+
+export const SmallTextSeventy = styled.span`
+  display: flex;
+  flex: 1 0 70%;
+
+  ${Media.Below.tablet`
+    flex: 1 0 50;
+    justify-content: center;
+  `}
+`;
+
 export const WhiteTitle = styled.h2`
   font-size: 24px;
   color: white;

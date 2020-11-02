@@ -20,7 +20,7 @@ export const SectionCtn = styled.div<SectionProps>`
   display: flex;
   position: relative;
   width: 100%;
-  height: 45vw;
+  height: 58vw;
   max-height: 600px;
   min-height: 300px;
   padding: ${THEME.layout.section.desktop} ${THEME.layout.gutter.desktop};

@@ -10,8 +10,6 @@ import {
   SubmitButton,
 } from './index.style';
 
-const API_KEY = process.env.REACT_APP_CAPTCHA_SITE_KEY;
-
 const ContactForm: React.FC<any> = (...restProps): React.ReactElement => {
 
   const [errorDisp, setErrorDisp] = useState(false);
@@ -47,7 +45,7 @@ const ContactForm: React.FC<any> = (...restProps): React.ReactElement => {
       <InputArea name='message' placeholder='Message' onChange={handleInputChange} />
       <ReCAPTCHA
         name='captcha'
-        sitekey={API_KEY}
+        sitekey={'6LdpHd4ZAAAAAL66JezFgY0YNrFyXhC-XXeRKc_G'}
         onChange={handleInputChange}
       />
       <SubmitButton type='submit' value='Send Message' disabled={submitted} />

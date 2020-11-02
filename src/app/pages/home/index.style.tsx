@@ -57,6 +57,14 @@ export const Title = styled.h2`
   `}
 `;
 
+export const MapFormLayout = styled.div`
+  display: flex;
+
+  ${Media.Below.tablet`
+    flex-direction: column;
+  `}
+`;
+
 export const HeroContentCtn = styled.div`
   display: flex;
   flex-direction: column;
@@ -82,12 +90,11 @@ export const FormCtn = styled.div`
   flex-direction: column;
   width: 100%;
   min-width: 300px;
-  padding-left: 7vw;
-  padding-bottom: 80px;
+  padding: 0 7vw 80px;
 
   ${Media.Below.tablet`
     width: 100%;
-    padding: 0 7vw 80px;
+    padding: 48px 7vw 80px;
   `}
 `;
 

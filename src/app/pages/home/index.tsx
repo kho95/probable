@@ -28,6 +28,7 @@ import {
   ContactInfoCtn,
   FooterLink,
   FormCtn,
+  MapFormLayout,
   SectionCtn,
 } from './index.style';
 
@@ -108,8 +109,8 @@ const Home: React.FC<any> = (): React.ReactElement => {
             </SectionCtn>
           </ContactInfoCtn>
         </ContentLayout>
-        <ContentLayout wrap={'true'}>
-          <ContentLayout desktopWidth='60%' tabletWidth='100%' column>
+        <MapFormLayout>
+          <ContentLayout desktopWidth='50%' tabletWidth='100%' column>
             <ContentLayout justify='center'>
               <Map coordinates={{
                 coordinates: {
@@ -120,13 +121,13 @@ const Home: React.FC<any> = (): React.ReactElement => {
               }} />
             </ContentLayout>
           </ContentLayout>
-          <ContentLayout desktopWidth='40%' tabletWidth='100%'>
+          <ContentLayout desktopWidth='50%' tabletWidth='100%'>
             <FormCtn>
               <Title>GET IN TOUCH</Title>
               <ContactForm />
             </FormCtn>
           </ContentLayout>
-        </ContentLayout>
+        </MapFormLayout>
       </Section>
     </PageLayout >
   );

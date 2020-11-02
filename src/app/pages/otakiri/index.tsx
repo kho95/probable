@@ -17,13 +17,15 @@ import SectionBackground from '../../components/section-background';
 import Map from '../../components/google-map';
 
 import {
-  HeroImageLayout,
   LogoImage,
   LogoParagraph,
   ImageAddressContent,
   ImageAddressCtn,
   HeroText,
   MineralsParagraph,
+  SmallTextTitle,
+  SmallTextThirty,
+  SmallTextSeventy,
   Title,
   WhiteTitle,
 } from './index.style';
@@ -96,63 +98,63 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
       <Section>
         <TextWithImage img='https://i.imgur.com/jujTON7.jpg'>
           <Title>The Taste of 932</Title>
-          <Paragraph>
+          <SmallTextTitle>
             Carbonation
-          </Paragraph>
+          </SmallTextTitle>
           <Paragraph>
             오타키리 물은 가볍게 탄산염화되어 있고 낮은<br />
             TDS(Total Dissolved Solids) 수치를 가지고 있습니다.<br />
             음식과 같이 섭취했을 때 맛이나 느낌이 강하지 않으며<br />
             물만 섭취할 경우 상쾌함과 청결한 맛을 선사합니다.
           </Paragraph>
-          <Paragraph>
+          <SmallTextTitle>
             Total Dissolved Solids
-          </Paragraph>
+          </SmallTextTitle>
           <Paragraph small>
-            <ContentLayout desktopWidth='30%'>
+            <SmallTextThirty>
               Low<br />
               Medium<br />
               High<br />
-            </ContentLayout>
-            <ContentLayout desktopWidth='70%'>
+            </SmallTextThirty>
+            <SmallTextSeventy>
               50 - 250 mg/l ... Otakiri Source 932 130 mg/l<br />
               250 - 500 mg/l<br />
               500 - 1500 mg/l<br />
-            </ContentLayout>
+            </SmallTextSeventy>
           </Paragraph>
-          <Paragraph>
+          <SmallTextTitle>
             Purity
-          </Paragraph>
+          </SmallTextTitle>
           <Paragraph small>
-            <ContentLayout desktopWidth='30%' tabletWidth='50%'>
+            <SmallTextThirty>
               Superior<br />
               Very Good<br />
               Good<br />
               Acceptable<br />
               Potable
-            </ContentLayout>
-            <ContentLayout desktopWidth='70%' tabletWidth='50%'>
+            </SmallTextThirty>
+            <SmallTextSeventy>
               0 - 1 mg/l ... Otakiri Source 932 0.3 mg/l<br />
               1 - 4 mg/l<br />
               4 - 7 mg/l<br />
               7 - 10 mg/l<br />
               10 - 50 mg/l
-            </ContentLayout>
+            </SmallTextSeventy>
           </Paragraph>
-          <Paragraph>
+          <SmallTextTitle>
             Acidity (pH)
-          </Paragraph>
+          </SmallTextTitle>
           <Paragraph small>
-            <ContentLayout desktopWidth='30%'>
+            <SmallTextThirty>
               1<br />
               7<br />
               14<br />
-            </ContentLayout>
-            <ContentLayout desktopWidth='60%'>
+            </SmallTextThirty>
+            <SmallTextSeventy>
               Acidic (Sour)<br />
               Neutral (Sweet).  Otakiri Source 932 (6.8 -7.2)<br />
               Alkaline (Bitter)<br />
-            </ContentLayout>
+            </SmallTextSeventy>
           </Paragraph>
           <div>
           </div>
@@ -163,7 +165,7 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
       </Section>
 
       <Section>
-        <ContentLayout wrap={true}>
+        <ContentLayout wrap={'true'}>
           <ContentLayout desktopWidth='25%' tabletWidth='50%' mobileLargeWidth='100%' align='center' column={true}>
             <Image src='https://i.imgur.com/ozgWSzw.png' alt='Otakiri 932 still glass bottle' height='300px'></Image>
             <Paragraph align='center'>
@@ -258,7 +260,7 @@ const Otakiri: React.FC<any> = (): React.ReactElement => {
         </LogoParagraph>
       </Section>
       <Section>
-        <ContentLayout wrap>
+        <ContentLayout wrap={'true'}>
           <ImageAddressCtn desktopWidth='40%' tabletWidth='50%' mobileLargeWidth='100%'>
             <ImageAddressContent>
               <Image src='https://i.imgur.com/2oV0z4F.png' alt='Otakiri springs logo' height='200px'></Image>
